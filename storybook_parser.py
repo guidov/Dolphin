@@ -6,21 +6,63 @@ Optimized for illustrated storybooks - processes only text elements,
 skipping tables, equations, and other complex elements.
 
 Usage:
-    python storybook_parser.py book.pdf                    # Output to stdout
+    python storybook_parser.py book.pdf                    # Output JSON to stdout
     python storybook_parser.py book.pdf -o story.json      # Save as JSON
-    python storybook_parser.py book.pdf -o story.txt --text-only  # Plain text
+    python storybook_parser.py book.pdf --text-only        # Plain text with newlines
+    python storybook_parser.py book.pdf --clean            # Clean flowing text (best for reading)
 
 Examples:
     python storybook_parser.py "Wizard_of_Oz.pdf" -o wizard.json
-    python storybook_parser.py "Charlotte's Web.pdf" --text-only > story.txt
+    python storybook_parser.py "Charlotte's Web.pdf" --clean > story.txt
 """
 
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
 from datetime import datetime
+
+
+def clean_text(text: str) -> str:
+    """
+    Clean OCR text for natural reading.
+    - Remove page markers
+    - Join hyphenated words
+    - Remove extra whitespace
+    - Join lines into paragraphs
+    - Remove LaTeX artifacts
+    """
+    # Remove page markers like "--- Page 1 ---"
+    text = re.sub(r'--- Page \d+ ---\n*', '', text)
+    
+    # Remove page numbers (standalone numbers at start of lines)
+    text = re.sub(r'^\d+\s*$', '', text, flags=re.MULTILINE)
+    
+    # Remove standalone short numbers like "2. 9" or "2I"
+    text = re.sub(r'^\d+\.\s*\d*\s*$', '', text, flags=re.MULTILINE)
+    
+    # Remove LaTeX equation markers (including content inside)
+    text = re.sub(r'\$\$.*?\$\$', '', text, flags=re.DOTALL)
+    
+    # Join hyphenated words at line breaks (e.g., "won-\nderful" -> "wonderful")
+    text = re.sub(r'(\w)-\n(\w)', r'\1\2', text)
+    
+    # Replace single newlines with spaces (join lines within paragraphs)
+    text = re.sub(r'(?<!\n)\n(?!\n)', ' ', text)
+    
+    # Replace multiple newlines with double newline (paragraph breaks)
+    text = re.sub(r'\n{2,}', '\n\n', text)
+    
+    # Clean up multiple spaces
+    text = re.sub(r' {2,}', ' ', text)
+    
+    # Strip each paragraph
+    paragraphs = [p.strip() for p in text.split('\n\n')]
+    paragraphs = [p for p in paragraphs if p and len(p) > 3]  # Remove empty/tiny paragraphs
+    
+    return '\n\n'.join(paragraphs)
 
 
 def main():
@@ -34,7 +76,12 @@ def main():
     parser.add_argument(
         "--text-only",
         action="store_true",
-        help="Output only the extracted text (no JSON structure)"
+        help="Output extracted text with page markers"
+    )
+    parser.add_argument(
+        "--clean",
+        action="store_true",
+        help="Output clean flowing text (no page markers, joined paragraphs)"
     )
     parser.add_argument(
         "--quiet", "-q",
@@ -106,8 +153,14 @@ def main():
     log(f"✅ Processed {total_pages} page(s) in {elapsed:.1f}s ({elapsed/total_pages:.1f}s/page)")
     
     # Format output
-    if args.text_only:
-        output = result.get("full_text", "")
+    full_text = result.get("full_text", "")
+    
+    if args.clean:
+        # Clean flowing text - best for reading
+        output = clean_text(full_text)
+    elif args.text_only:
+        # Raw text with page markers
+        output = full_text
     else:
         # Build structured JSON
         structured = {
@@ -119,7 +172,8 @@ def main():
                 "mode": "storybook",
             },
             "pages": result.get("pages", []),
-            "full_text": result.get("full_text", ""),
+            "full_text": full_text,
+            "clean_text": clean_text(full_text),
         }
         output = json.dumps(structured, indent=2, ensure_ascii=False)
     
