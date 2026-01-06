@@ -91,10 +91,10 @@ def download_model():
 
 @app.cls(
     image=dolphin_image,
-    gpu="A100-40GB",  # Can also use "L40S" for cost savings
+    gpu="T4",  # Cheaper option (~$0.15/hr) - 16GB VRAM
     volumes={"/model_cache": model_volume},
     scaledown_window=300,  # Keep warm for 5 minutes
-    timeout=600,  # 10 minute timeout for processing
+    timeout=1800,  # 30 minute timeout for large documents
 )
 class DolphinModel:
     """
@@ -215,6 +215,7 @@ class DolphinModel:
     def parse_pdf(self, pdf_bytes: bytes) -> dict:
         """
         Parse a PDF document and extract text content.
+        Uses two-stage parsing: layout analysis + element-level recognition.
         
         Args:
             pdf_bytes: Raw PDF file bytes
@@ -228,6 +229,8 @@ class DolphinModel:
         """
         import pymupdf
         from PIL import Image
+        from utils.utils import parse_layout_string, process_coordinates
+        from utils.markdown_utils import MarkdownConverter
         
         try:
             # Open PDF from bytes
@@ -236,6 +239,7 @@ class DolphinModel:
             
             all_page_results = []
             all_markdown_parts = []
+            markdown_converter = MarkdownConverter()
             
             for page_idx in range(total_pages):
                 print(f"Processing page {page_idx + 1}/{total_pages}...")
@@ -253,25 +257,91 @@ class DolphinModel:
                 img_data = pix.tobytes("png")
                 pil_image = Image.open(io.BytesIO(img_data)).convert("RGB")
                 
-                # Stage 1: Layout analysis
+                # Stage 1: Layout analysis - get reading order and element bboxes
                 layout_output = self._chat(
                     "Parse the reading order of this document.",
                     pil_image
                 )
                 
-                # Stage 2: Content extraction (simplified for MVP)
-                content_output = self._chat(
-                    "Read all the text in this document image. Output in markdown format.",
-                    pil_image
-                )
+                # Parse layout to get element list
+                layout_list = parse_layout_string(layout_output)
+                
+                # Handle edge cases
+                if not layout_list or not (layout_output.startswith("[") and layout_output.endswith("]")):
+                    # Treat entire page as one text element
+                    layout_list = [([0, 0, pil_image.size[0], pil_image.size[1]], 'distorted_page', [])]
+                
+                # Stage 2: Element-level recognition
+                recognition_results = []
+                reading_order = 0
+                
+                for bbox, label, tags in layout_list:
+                    try:
+                        # Get coordinates
+                        if label == "distorted_page":
+                            x1, y1, x2, y2 = 0, 0, pil_image.size[0], pil_image.size[1]
+                            crop = pil_image
+                        else:
+                            x1, y1, x2, y2 = process_coordinates(bbox, pil_image)
+                            crop = pil_image.crop((x1, y1, x2, y2))
+                        
+                        # Skip tiny crops
+                        if crop.size[0] <= 3 or crop.size[1] <= 3:
+                            continue
+                        
+                        # Skip figures (just note them)
+                        if label == "fig":
+                            recognition_results.append({
+                                "label": label,
+                                "text": "[Figure]",
+                                "bbox": [x1, y1, x2, y2],
+                                "reading_order": reading_order,
+                            })
+                            reading_order += 1
+                            continue
+                        
+                        # Choose prompt based on element type
+                        if label == "tab":
+                            prompt = "Convert the table to markdown format."
+                        elif label == "equ":
+                            prompt = "Convert the equation to LaTeX format."
+                        elif label == "code":
+                            prompt = "Read the code in the image."
+                        else:
+                            prompt = "Read text in the image."
+                        
+                        # Run element recognition
+                        text_output = self._chat(prompt, crop)
+                        
+                        recognition_results.append({
+                            "label": label,
+                            "text": text_output.strip(),
+                            "bbox": [x1, y1, x2, y2],
+                            "reading_order": reading_order,
+                        })
+                        reading_order += 1
+                        
+                    except Exception as e:
+                        print(f"Error processing element: {e}")
+                        continue
+                
+                # Sort by reading order
+                recognition_results.sort(key=lambda x: x.get("reading_order", 0))
+                
+                # Convert to markdown
+                try:
+                    page_markdown = markdown_converter.convert(recognition_results)
+                except Exception:
+                    # Fallback: just join all text
+                    page_markdown = "\n\n".join([r.get("text", "") for r in recognition_results])
                 
                 page_result = {
                     "page_number": page_idx + 1,
-                    "layout": layout_output,
-                    "content": content_output,
+                    "elements": recognition_results,
+                    "markdown": page_markdown,
                 }
                 all_page_results.append(page_result)
-                all_markdown_parts.append(f"## Page {page_idx + 1}\n\n{content_output}")
+                all_markdown_parts.append(f"## Page {page_idx + 1}\n\n{page_markdown}")
             
             doc.close()
             
@@ -286,9 +356,11 @@ class DolphinModel:
             }
             
         except Exception as e:
+            import traceback
             return {
                 "success": False,
                 "error": str(e),
+                "traceback": traceback.format_exc(),
                 "total_pages": 0,
                 "pages": [],
                 "markdown": "",
@@ -298,6 +370,7 @@ class DolphinModel:
     def parse_image(self, image_bytes: bytes) -> dict:
         """
         Parse a single image and extract text content.
+        Uses two-stage parsing: layout analysis + element-level recognition.
         
         Args:
             image_bytes: Raw image file bytes
@@ -306,28 +379,95 @@ class DolphinModel:
             Dictionary with extracted content
         """
         from PIL import Image
+        from utils.utils import parse_layout_string, process_coordinates
+        from utils.markdown_utils import MarkdownConverter
         
         try:
             # Open image from bytes
             pil_image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
             
-            # Extract content
-            content_output = self._chat(
-                "Read all the text in this document image. Output in markdown format.",
+            # Stage 1: Layout analysis
+            layout_output = self._chat(
+                "Parse the reading order of this document.",
                 pil_image
             )
             
+            # Parse layout
+            layout_list = parse_layout_string(layout_output)
+            
+            if not layout_list or not (layout_output.startswith("[") and layout_output.endswith("]")):
+                layout_list = [([0, 0, pil_image.size[0], pil_image.size[1]], 'distorted_page', [])]
+            
+            # Stage 2: Element-level recognition
+            recognition_results = []
+            reading_order = 0
+            
+            for bbox, label, tags in layout_list:
+                try:
+                    if label == "distorted_page":
+                        x1, y1, x2, y2 = 0, 0, pil_image.size[0], pil_image.size[1]
+                        crop = pil_image
+                    else:
+                        x1, y1, x2, y2 = process_coordinates(bbox, pil_image)
+                        crop = pil_image.crop((x1, y1, x2, y2))
+                    
+                    if crop.size[0] <= 3 or crop.size[1] <= 3:
+                        continue
+                    
+                    if label == "fig":
+                        recognition_results.append({
+                            "label": label,
+                            "text": "[Figure]",
+                            "bbox": [x1, y1, x2, y2],
+                            "reading_order": reading_order,
+                        })
+                        reading_order += 1
+                        continue
+                    
+                    if label == "tab":
+                        prompt = "Convert the table to markdown format."
+                    elif label == "equ":
+                        prompt = "Convert the equation to LaTeX format."
+                    elif label == "code":
+                        prompt = "Read the code in the image."
+                    else:
+                        prompt = "Read text in the image."
+                    
+                    text_output = self._chat(prompt, crop)
+                    
+                    recognition_results.append({
+                        "label": label,
+                        "text": text_output.strip(),
+                        "bbox": [x1, y1, x2, y2],
+                        "reading_order": reading_order,
+                    })
+                    reading_order += 1
+                    
+                except Exception as e:
+                    print(f"Error processing element: {e}")
+                    continue
+            
+            # Sort and convert to markdown
+            recognition_results.sort(key=lambda x: x.get("reading_order", 0))
+            
+            try:
+                markdown_converter = MarkdownConverter()
+                markdown_output = markdown_converter.convert(recognition_results)
+            except Exception:
+                markdown_output = "\n\n".join([r.get("text", "") for r in recognition_results])
+            
             return {
                 "success": True,
-                "content": content_output,
-                "markdown": content_output,
+                "elements": recognition_results,
+                "markdown": markdown_output,
             }
             
         except Exception as e:
+            import traceback
             return {
                 "success": False,
                 "error": str(e),
-                "content": "",
+                "traceback": traceback.format_exc(),
                 "markdown": "",
             }
 
@@ -346,7 +486,7 @@ web_image = (
 static_path = Path(__file__).parent / "web"
 
 
-@app.function(image=web_image)
+@app.function(image=web_image, timeout=1800)
 @modal.concurrent(max_inputs=100)
 @modal.asgi_app()
 def web_app():
