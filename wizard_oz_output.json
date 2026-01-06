@@ -1,0 +1,766 @@
+{
+  "metadata": {
+    "source_file": "Wizard_of_Oz_10imgpages.pdf",
+    "total_pages": 11,
+    "processing_time_seconds": 925.98,
+    "processed_at": "2026-01-06T12:36:14.110344",
+    "model": "ByteDance/Dolphin-v2"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "16",
+          "bbox": [
+            130,
+            91,
+            150,
+            108
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            227,
+            86,
+            512,
+            108
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "resolved to wait calmly and see what the future would\nbring. At last she crawled over the swaying floor to her\nbed, and lay down upon it; and Toto followed and lay\ndown beside her.",
+          "bbox": [
+            128,
+            118,
+            612,
+            211
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "In spite of the swaying of the house and the wailing\nof the wind, Dorothy soon closed her eyes and fell fast\nasleep.",
+          "bbox": [
+            128,
+            210,
+            612,
+            281
+          ]
+        },
+        {
+          "type": "figure",
+          "content": "[Figure]",
+          "bbox": [
+            39,
+            417,
+            580,
+            896
+          ]
+        }
+      ],
+      "text": "16\n\nTHE WONDERFUL WIZARD OF OZ.\n\nresolved to wait calmly and see what the future would\nbring. At last she crawled over the swaying floor to her\nbed, and lay down upon it; and Toto followed and lay\ndown beside her.\n\nIn spite of the swaying of the house and the wailing\nof the wind, Dorothy soon closed her eyes and fell fast\nasleep.\n\n[Figure]",
+      "markdown": "16\n\nTHE WONDERFUL WIZARD OF OZ.\n\nresolved to wait calmly and see what the future would bring. At last she crawled over the swaying floor to her bed, and lay down upon it; and Toto followed and lay down beside her.\n\nIn spite of the swaying of the house and the wailing of the wind, Dorothy soon closed her eyes and fell fast asleep.\n\n![Figure 4](data:image/png;base64,[Figure])\n\n"
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "type": "heading",
+          "content": "Chapter II.\nThe Council with\nThe Munchkins.",
+          "bbox": [
+            82,
+            274,
+            502,
+            391
+          ]
+        },
+        {
+          "type": "figure",
+          "content": "[Figure]",
+          "bbox": [
+            314,
+            421,
+            515,
+            726
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "2. 9",
+          "bbox": [
+            495,
+            728,
+            537,
+            760
+          ]
+        }
+      ],
+      "text": "Chapter II.\nThe Council with\nThe Munchkins.\n\n[Figure]\n\n2. 9",
+      "markdown": "## Chapter II. The Council with The Munchkins.\n\n![Figure 1](data:image/png;base64,[Figure])\n\n2. 9\n\n"
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "type": "table",
+          "content": "<table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr><tr><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr><tr><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr><tr><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td></tr><tr><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr><tr><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td></tr><tr><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr><tr><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td></tr><tr><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td></tr><tr><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td></tr><tr><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td></tr><tr><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr><tr><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr><tr><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr><tr><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td></tr><tr><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td></tr><tr><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td></tr><tr><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td></tr><tr><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td></tr><tr><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr><tr><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td></tr><tr><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td></tr><tr><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td></tr><tr><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td></tr><tr><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td></tr><tr><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td></tr><tr><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td></tr><tr><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td></tr><tr><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td></tr><tr><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td></tr><tr><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td></tr><tr><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td></tr><tr><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td></tr><tr><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td></tr><tr><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td></tr><tr><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td></tr><tr><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td></tr><tr><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td></tr><tr><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td></tr><tr><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td></tr><tr><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td></tr><tr><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td></tr><tr><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td></tr><tr><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td></tr><tr><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td></tr><tr><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td></tr><tr><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td></tr><tr><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td></tr><tr><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td></tr><tr><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td></tr><tr><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td></tr><tr><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td></tr><tr><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td></tr><tr><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td></tr><tr><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td></tr><tr><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td></tr><tr><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr><tr><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td></tr><tr><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td></tr><tr><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td></tr><tr><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td></tr><tr><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td></tr><tr><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td></tr><tr><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td></tr><tr><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td></tr><tr><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td></tr><tr><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td></tr><tr><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td></tr><tr><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td></tr><tr><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td></tr><tr><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td></tr><tr><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td></tr><tr><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td></tr><tr><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td></tr><tr><td>78</td><td>78</td><td>78</td><td>78</td><td>78</td><td",
+          "bbox": [
+            0,
+            2,
+            693,
+            896
+          ]
+        }
+      ],
+      "text": "<table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr><tr><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr><tr><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr><tr><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td></tr><tr><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr><tr><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td></tr><tr><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr><tr><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td></tr><tr><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td></tr><tr><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td></tr><tr><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td></tr><tr><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr><tr><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr><tr><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr><tr><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td></tr><tr><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td></tr><tr><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td></tr><tr><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td></tr><tr><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td></tr><tr><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr><tr><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td></tr><tr><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td></tr><tr><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td></tr><tr><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td></tr><tr><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td></tr><tr><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td></tr><tr><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td></tr><tr><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td></tr><tr><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td></tr><tr><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td></tr><tr><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td></tr><tr><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td></tr><tr><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td></tr><tr><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td></tr><tr><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td></tr><tr><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td></tr><tr><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td></tr><tr><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td></tr><tr><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td></tr><tr><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td></tr><tr><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td></tr><tr><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td></tr><tr><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td></tr><tr><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td></tr><tr><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td></tr><tr><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td></tr><tr><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td></tr><tr><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td></tr><tr><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td></tr><tr><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td></tr><tr><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td></tr><tr><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td></tr><tr><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td></tr><tr><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td></tr><tr><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td></tr><tr><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td></tr><tr><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr><tr><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td></tr><tr><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td></tr><tr><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td></tr><tr><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td></tr><tr><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td></tr><tr><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td></tr><tr><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td></tr><tr><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td></tr><tr><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td></tr><tr><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td></tr><tr><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td></tr><tr><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td></tr><tr><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td></tr><tr><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td></tr><tr><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td></tr><tr><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td></tr><tr><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td></tr><tr><td>78</td><td>78</td><td>78</td><td>78</td><td>78</td><td",
+      "markdown": "\n\n\n"
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "type": "figure",
+          "content": "[Figure]",
+          "bbox": [
+            52,
+            64,
+            128,
+            235
+          ]
+        },
+        {
+          "type": "figure",
+          "content": "[Figure]",
+          "bbox": [
+            141,
+            187,
+            399,
+            387
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "She was awakened\nby a shock, so sudden\nand severe that if Doro-\nthy had not been lying on the soft\nbed she might have been hurt.\nAs it was, the jar made her catch\nher breath and wonder what had\nhappened; and Toto put his cold\nlittle nose into her face and whined dismally. Dorothy\nsat up and noticed that the house was not moving; nor was\nit dark, for the bright sunshine came in at the window,\nflooding the little room. She sprang from her bed and\nwith Toto at her heels ran and opened the door.",
+          "bbox": [
+            54,
+            387,
+            552,
+            707
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "The little girl gave a cry of amazement and looked",
+          "bbox": [
+            102,
+            706,
+            553,
+            733
+          ]
+        }
+      ],
+      "text": "[Figure]\n\n[Figure]\n\nShe was awakened\nby a shock, so sudden\nand severe that if Doro-\nthy had not been lying on the soft\nbed she might have been hurt.\nAs it was, the jar made her catch\nher breath and wonder what had\nhappened; and Toto put his cold\nlittle nose into her face and whined dismally. Dorothy\nsat up and noticed that the house was not moving; nor was\nit dark, for the bright sunshine came in at the window,\nflooding the little room. She sprang from her bed and\nwith Toto at her heels ran and opened the door.\n\nThe little girl gave a cry of amazement and looked",
+      "markdown": "![Figure 0](data:image/png;base64,[Figure])\n\n![Figure 1](data:image/png;base64,[Figure])\n\nShe was awakened by a shock, so sudden and severe that if Dorothy had not been lying on the soft bed she might have been hurt. As it was, the jar made her catch her breath and wonder what had happened; and Toto put his cold little nose into her face and whined dismally. Dorothy sat up and noticed that the house was not moving; nor was it dark, for the bright sunshine came in at the window, flooding the little room. She sprang from her bed and with Toto at her heels ran and opened the door.\n\nThe little girl gave a cry of amazement and looked\n\n"
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "20",
+          "bbox": [
+            151,
+            87,
+            172,
+            104
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            251,
+            82,
+            534,
+            105
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "about her, her eyes growing bigger and bigger at the won-\nderful sights she saw.",
+          "bbox": [
+            150,
+            112,
+            631,
+            160
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "The cyclone had set the house down, very gently—for\na cyclone—in the midst of a country of marvelous beauty.\nThere were lovely patches of green sward all about, with\nstately trees bearing rich and luscious fruits. Banks of\ngorgeous flowers were on every hand, and birds with rare\nand brilliant plumage sang and fluttered in the trees and\nbushes. A little way off was a small brook, rushing and\nsparkling along between green banks, and murmuring in a\nvoice very grateful to a little girl who had lived so long on\nthe dry, gray prairies.",
+          "bbox": [
+            150,
+            159,
+            633,
+            388
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "While she stood looking eagerly at the strange and\nbeautiful sights, she noticed coming toward her a group of\nthe queerest people she had ever seen. They were not as big\nas the grown folk she had always been used to; but neither\nwere they very small. In fact, they seemed about as tall\nas Dorothy, who was a well-grown child for her age,\nalthough they were, so far as looks go, many years older.",
+          "bbox": [
+            149,
+            387,
+            634,
+            548
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Three were men and one a woman, and all were oddly\ndressed. They wore round hats that rose to a small point\na foot above their heads, with little bells around the brims\nthat tinkled sweetly as they moved. The hats of the men\nwere blue; the little woman's hat was white, and she wore\na white gown that hung in plaits from her shoulders; over it\nwere sprinkled little stars that glistened in the sun like\ndiamonds. The men were dressed in blue, of the same",
+          "bbox": [
+            149,
+            547,
+            634,
+            731
+          ]
+        }
+      ],
+      "text": "20\n\nTHE WONDERFUL WIZARD OF OZ.\n\nabout her, her eyes growing bigger and bigger at the won-\nderful sights she saw.\n\nThe cyclone had set the house down, very gently—for\na cyclone—in the midst of a country of marvelous beauty.\nThere were lovely patches of green sward all about, with\nstately trees bearing rich and luscious fruits. Banks of\ngorgeous flowers were on every hand, and birds with rare\nand brilliant plumage sang and fluttered in the trees and\nbushes. A little way off was a small brook, rushing and\nsparkling along between green banks, and murmuring in a\nvoice very grateful to a little girl who had lived so long on\nthe dry, gray prairies.\n\nWhile she stood looking eagerly at the strange and\nbeautiful sights, she noticed coming toward her a group of\nthe queerest people she had ever seen. They were not as big\nas the grown folk she had always been used to; but neither\nwere they very small. In fact, they seemed about as tall\nas Dorothy, who was a well-grown child for her age,\nalthough they were, so far as looks go, many years older.\n\nThree were men and one a woman, and all were oddly\ndressed. They wore round hats that rose to a small point\na foot above their heads, with little bells around the brims\nthat tinkled sweetly as they moved. The hats of the men\nwere blue; the little woman's hat was white, and she wore\na white gown that hung in plaits from her shoulders; over it\nwere sprinkled little stars that glistened in the sun like\ndiamonds. The men were dressed in blue, of the same",
+      "markdown": "20\n\nTHE WONDERFUL WIZARD OF OZ.\n\nabout her, her eyes growing bigger and bigger at the wonderful sights she saw.\n\nThe cyclone had set the house down, very gently—for a cyclone—in the midst of a country of marvelous beauty. There were lovely patches of green sward all about, with stately trees bearing rich and luscious fruits. Banks of gorgeous flowers were on every hand, and birds with rare and brilliant plumage sang and fluttered in the trees and bushes. A little way off was a small brook, rushing and sparkling along between green banks, and murmuring in a voice very grateful to a little girl who had lived so long on the dry, gray prairies.\n\nWhile she stood looking eagerly at the strange and beautiful sights, she noticed coming toward her a group of the queerest people she had ever seen. They were not as big as the grown folk she had always been used to; but neither were they very small. In fact, they seemed about as tall as Dorothy, who was a well-grown child for her age, although they were, so far as looks go, many years older.\n\nThree were men and one a woman, and all were oddly dressed. They wore round hats that rose to a small point a foot above their heads, with little bells around the brims that tinkled sweetly as they moved. The hats of the men were blue; the little woman's hat was white, and she wore a white gown that hung in plaits from her shoulders; over it were sprinkled little stars that glistened in the sun like diamonds. The men were dressed in blue, of the same\n\n"
+    },
+    {
+      "page_number": 6,
+      "elements": [
+        {
+          "type": "figure",
+          "content": "[Figure]",
+          "bbox": [
+            65,
+            68,
+            629,
+            816
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "$$\n \"I am the Witch of the North.\" \n$$",
+          "bbox": [
+            265,
+            817,
+            435,
+            837
+          ]
+        }
+      ],
+      "text": "[Figure]\n\n$$\n \"I am the Witch of the North.\" \n$$",
+      "markdown": "![Figure 0](data:image/png;base64,[Figure])\n\n$$ \"I am the Witch of the North.\" $$\n\n"
+    },
+    {
+      "page_number": 7,
+      "elements": [
+        {
+          "type": "table",
+          "content": "<table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>13</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>17</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>18</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>24</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>26</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>28</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>29</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>31</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>33</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>34</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>36</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>37</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>39</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>40</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>41</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>42</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>43</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>44</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>45</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>46</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>47</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>48</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>49</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>51</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>52</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>53</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>55</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>56</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>57</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>58</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>59</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>61</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>62</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>63</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>64</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>65</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>66</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>67</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>68</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>69</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>70</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>71</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>72</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>73</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>74</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>75</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>76</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>77</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>78</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>79</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>81</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>82</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>83</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>84</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>85</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>86</td><td>0</td><td>0</td><td>0",
+          "bbox": [
+            0,
+            1,
+            703,
+            896
+          ]
+        }
+      ],
+      "text": "<table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>13</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>17</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>18</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>24</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>26</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>28</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>29</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>31</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>33</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>34</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>36</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>37</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>39</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>40</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>41</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>42</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>43</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>44</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>45</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>46</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>47</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>48</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>49</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>51</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>52</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>53</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>55</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>56</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>57</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>58</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>59</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>61</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>62</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>63</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>64</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>65</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>66</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>67</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>68</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>69</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>70</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>71</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>72</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>73</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>74</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>75</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>76</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>77</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>78</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>79</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>81</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>82</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>83</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>84</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>85</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>86</td><td>0</td><td>0</td><td>0",
+      "markdown": "\n\n\n"
+    },
+    {
+      "page_number": 8,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            157,
+            70,
+            448,
+            92
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "$$\n 2I \n$$",
+          "bbox": [
+            529,
+            73,
+            550,
+            89
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "shade as their hats, and wore well polished boots with a\ndeep roll of blue at the tops. The men, Dorothy thought,\nwere about as old as Uncle Henry, for two of them had\nbeards. But the little woman was doubtless much older:\nher face was covered with wrinkles, her hair was nearly\nwhite, and she walked rather stiffly.",
+          "bbox": [
+            55,
+            102,
+            552,
+            244
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "When these people drew near the house where Dorothy\nwas standing in the doorway, they paused and whispered\namong themselves, as if afraid to come farther. But the\nlittle old woman walked up to Dorothy, made a low bow\nand said, in a sweet voice,",
+          "bbox": [
+            57,
+            244,
+            552,
+            360
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"You are welcome, most noble Sorceress, to the land\nof the Munchkins. We are so grateful to you for having\nkilled the wicked Witch of the East, and for setting our\npeople free from bondage.\"",
+          "bbox": [
+            58,
+            360,
+            552,
+            455
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Dorothy listened to this speech with wonder. What",
+          "bbox": [
+            104,
+            455,
+            551,
+            476
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "could the little woman possibly\nmean by calling her a sorceress,\nand saying she had killed the\nwicked Witch of the East ?\n\nDorothy was an innocent,\nharmless little girl, who had\nbeen carried by a cyclone\nmany miles from home;\nand she had never killed\nanything in all her life.",
+          "bbox": [
+            59,
+            477,
+            344,
+            711
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "But the little woman",
+          "bbox": [
+            102,
+            711,
+            294,
+            734
+          ]
+        },
+        {
+          "type": "figure",
+          "content": "[Figure]",
+          "bbox": [
+            301,
+            481,
+            603,
+            790
+          ]
+        }
+      ],
+      "text": "THE WONDERFUL WIZARD OF OZ.\n\n$$\n 2I \n$$\n\nshade as their hats, and wore well polished boots with a\ndeep roll of blue at the tops. The men, Dorothy thought,\nwere about as old as Uncle Henry, for two of them had\nbeards. But the little woman was doubtless much older:\nher face was covered with wrinkles, her hair was nearly\nwhite, and she walked rather stiffly.\n\nWhen these people drew near the house where Dorothy\nwas standing in the doorway, they paused and whispered\namong themselves, as if afraid to come farther. But the\nlittle old woman walked up to Dorothy, made a low bow\nand said, in a sweet voice,\n\n\"You are welcome, most noble Sorceress, to the land\nof the Munchkins. We are so grateful to you for having\nkilled the wicked Witch of the East, and for setting our\npeople free from bondage.\"\n\nDorothy listened to this speech with wonder. What\n\ncould the little woman possibly\nmean by calling her a sorceress,\nand saying she had killed the\nwicked Witch of the East ?\n\nDorothy was an innocent,\nharmless little girl, who had\nbeen carried by a cyclone\nmany miles from home;\nand she had never killed\nanything in all her life.\n\nBut the little woman\n\n[Figure]",
+      "markdown": "THE WONDERFUL WIZARD OF OZ.\n\n$$ 2I $$\n\nshade as their hats, and wore well polished boots with a deep roll of blue at the tops. The men, Dorothy thought, were about as old as Uncle Henry, for two of them had beards. But the little woman was doubtless much older: her face was covered with wrinkles, her hair was nearly white, and she walked rather stiffly.\n\nWhen these people drew near the house where Dorothy was standing in the doorway, they paused and whispered among themselves, as if afraid to come farther. But the little old woman walked up to Dorothy, made a low bow and said, in a sweet voice,\n\n\"You are welcome, most noble Sorceress, to the land of the Munchkins. We are so grateful to you for having killed the wicked Witch of the East, and for setting our people free from bondage.\"\n\nDorothy listened to this speech with wonder. What\n\ncould the little woman possibly mean by calling her a sorceress, and saying she had killed the wicked Witch of the East ?\n\nDorothy was an innocent, harmless little girl, who had been carried by a cyclone many miles from home; and she had never killed anything in all her life.\n\nBut the little woman\n\n![Figure 8](data:image/png;base64,[Figure])\n\n"
+    },
+    {
+      "page_number": 9,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "22",
+          "bbox": [
+            146,
+            92,
+            167,
+            108
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            246,
+            85,
+            527,
+            108
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "evidently expected her to answer; so Dorothy said, with\nhesitation,",
+          "bbox": [
+            147,
+            117,
+            626,
+            164
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"You are very kind; but there must be some mistake.\nI have not killed anything.\"",
+          "bbox": [
+            147,
+            163,
+            626,
+            212
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Your house did, anyway,\" replied the little old\nwoman, with a laugh; \"and that is the same thing. See!\"\nshe continued, pointing to the corner of the house; \"there\nare her two toes still sticking out from under a block of\nwood.\"",
+          "bbox": [
+            147,
+            211,
+            629,
+            323
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Dorothy looked, and gave a little cry of fright. There,\nindeed, just under the corner of the great beam the house\nrested on, two feet were sticking out, shot in silver shoes\nwith pointed toes.",
+          "bbox": [
+            147,
+            324,
+            629,
+            415
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Oh, dear! oh, dear!\" cried Dorothy, clasping her\nhands together in dismay; \"the house must have fallen on\nher. What ever shall we do?\"",
+          "bbox": [
+            147,
+            414,
+            629,
+            482
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"There is nothing to be done,\" said the little woman,",
+          "bbox": [
+            182,
+            482,
+            629,
+            505
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "calmly.",
+          "bbox": [
+            368,
+            509,
+            431,
+            529
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"But who was she?\" asked\nDorothy.",
+          "bbox": [
+            368,
+            529,
+            629,
+            577
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"She was the wicked Witch",
+          "bbox": [
+            402,
+            576,
+            629,
+            600
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "of the East, as I\nsaid,\" answered\nthe little woman.\n\"She has held all\nthe Munchkins\nin bondage for",
+          "bbox": [
+            483,
+            600,
+            630,
+            737
+          ]
+        }
+      ],
+      "text": "22\n\nTHE WONDERFUL WIZARD OF OZ.\n\nevidently expected her to answer; so Dorothy said, with\nhesitation,\n\n\"You are very kind; but there must be some mistake.\nI have not killed anything.\"\n\n\"Your house did, anyway,\" replied the little old\nwoman, with a laugh; \"and that is the same thing. See!\"\nshe continued, pointing to the corner of the house; \"there\nare her two toes still sticking out from under a block of\nwood.\"\n\nDorothy looked, and gave a little cry of fright. There,\nindeed, just under the corner of the great beam the house\nrested on, two feet were sticking out, shot in silver shoes\nwith pointed toes.\n\n\"Oh, dear! oh, dear!\" cried Dorothy, clasping her\nhands together in dismay; \"the house must have fallen on\nher. What ever shall we do?\"\n\n\"There is nothing to be done,\" said the little woman,\n\ncalmly.\n\n\"But who was she?\" asked\nDorothy.\n\n\"She was the wicked Witch\n\nof the East, as I\nsaid,\" answered\nthe little woman.\n\"She has held all\nthe Munchkins\nin bondage for",
+      "markdown": "22\n\nTHE WONDERFUL WIZARD OF OZ.\n\nevidently expected her to answer; so Dorothy said, with hesitation,\n\n\"You are very kind; but there must be some mistake. I have not killed anything.\"\n\n\"Your house did, anyway,\" replied the little old woman, with a laugh; \"and that is the same thing. See!\" she continued, pointing to the corner of the house; \"there are her two toes still sticking out from under a block of wood.\"\n\nDorothy looked, and gave a little cry of fright. There, indeed, just under the corner of the great beam the house rested on, two feet were sticking out, shot in silver shoes with pointed toes.\n\n\"Oh, dear! oh, dear!\" cried Dorothy, clasping her hands together in dismay; \"the house must have fallen on her. What ever shall we do?\"\n\n\"There is nothing to be done,\" said the little woman,\n\ncalmly.\n\n\"But who was she?\" asked Dorothy.\n\n\"She was the wicked Witch\n\nof the East, as I said,\" answered the little woman. \"She has held all the Munchkins in bondage for\n\n"
+    },
+    {
+      "page_number": 10,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            157,
+            83,
+            448,
+            106
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "23",
+          "bbox": [
+            533,
+            86,
+            554,
+            103
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "many years, making them slave for her night and day.\nNow they are all set free, and are grateful to you for the\nfavour.\"",
+          "bbox": [
+            59,
+            114,
+            555,
+            185
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Who are the Munchkins?\" enquired Dorothy.",
+          "bbox": [
+            95,
+            186,
+            490,
+            211
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"They are the people who live in this land of the\nEast, where the wicked Witch ruled.\"",
+          "bbox": [
+            60,
+            211,
+            554,
+            255
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Are you a Munchkin?\" asked Dorothy.",
+          "bbox": [
+            96,
+            255,
+            435,
+            279
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"No; but I am their friend, although I live in the land\nof the North. When they saw the Witch of the East was\ndead the Munchkins sent a swift messenger to me, and I\ncame at once. I am the Witch of the North.\"",
+          "bbox": [
+            60,
+            279,
+            556,
+            372
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"",
+          "bbox": [
+            97,
+            373,
+            555,
+            397
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Yes, indeed,\" answered the little woman. \"But I\nam a good witch, and the people love me. I am not as\npowerful as the wicked Witch was who ruled here, or I\nshould have set the people free myself.\"",
+          "bbox": [
+            61,
+            396,
+            557,
+            490
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"But I thought all witches were wicked,\" said the\ngirl, who was half frightened at facing a real witch.",
+          "bbox": [
+            63,
+            489,
+            558,
+            536
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Oh, no; that is a great mistake. There were only\nfour witches in all the Land of Oz, and two of them, those\nwho live in the North and the South, are good witches. I\nknow this is true, for I am one of them myself, and cannot\nbe mistaken. Those who dwelt in the East and the West\nwere, indeed, wicked witches; but now that you have killed\none of them, there is but one wicked Witch in all the Land\nof Oz—the one who lives in the West.\"",
+          "bbox": [
+            64,
+            535,
+            559,
+            722
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"But,\" said Dorothy, after a moment's thought, \"Aunt",
+          "bbox": [
+            100,
+            721,
+            559,
+            747
+          ]
+        }
+      ],
+      "text": "THE WONDERFUL WIZARD OF OZ.\n\n23\n\nmany years, making them slave for her night and day.\nNow they are all set free, and are grateful to you for the\nfavour.\"\n\n\"Who are the Munchkins?\" enquired Dorothy.\n\n\"They are the people who live in this land of the\nEast, where the wicked Witch ruled.\"\n\n\"Are you a Munchkin?\" asked Dorothy.\n\n\"No; but I am their friend, although I live in the land\nof the North. When they saw the Witch of the East was\ndead the Munchkins sent a swift messenger to me, and I\ncame at once. I am the Witch of the North.\"\n\n\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"\n\n\"Yes, indeed,\" answered the little woman. \"But I\nam a good witch, and the people love me. I am not as\npowerful as the wicked Witch was who ruled here, or I\nshould have set the people free myself.\"\n\n\"But I thought all witches were wicked,\" said the\ngirl, who was half frightened at facing a real witch.\n\n\"Oh, no; that is a great mistake. There were only\nfour witches in all the Land of Oz, and two of them, those\nwho live in the North and the South, are good witches. I\nknow this is true, for I am one of them myself, and cannot\nbe mistaken. Those who dwelt in the East and the West\nwere, indeed, wicked witches; but now that you have killed\none of them, there is but one wicked Witch in all the Land\nof Oz—the one who lives in the West.\"\n\n\"But,\" said Dorothy, after a moment's thought, \"Aunt",
+      "markdown": "THE WONDERFUL WIZARD OF OZ.\n\n23\n\nmany years, making them slave for her night and day. Now they are all set free, and are grateful to you for the favour.\"\n\n\"Who are the Munchkins?\" enquired Dorothy.\n\n\"They are the people who live in this land of the East, where the wicked Witch ruled.\"\n\n\"Are you a Munchkin?\" asked Dorothy.\n\n\"No; but I am their friend, although I live in the land of the North. When they saw the Witch of the East was dead the Munchkins sent a swift messenger to me, and I came at once. I am the Witch of the North.\"\n\n\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"\n\n\"Yes, indeed,\" answered the little woman. \"But I am a good witch, and the people love me. I am not as powerful as the wicked Witch was who ruled here, or I should have set the people free myself.\"\n\n\"But I thought all witches were wicked,\" said the girl, who was half frightened at facing a real witch.\n\n\"Oh, no; that is a great mistake. There were only four witches in all the Land of Oz, and two of them, those who live in the North and the South, are good witches. I know this is true, for I am one of them myself, and cannot be mistaken. Those who dwelt in the East and the West were, indeed, wicked witches; but now that you have killed one of them, there is but one wicked Witch in all the Land of Oz—the one who lives in the West.\"\n\n\"But,\" said Dorothy, after a moment's thought, \"Aunt\n\n"
+    },
+    {
+      "page_number": 11,
+      "elements": [
+        {
+          "type": "paragraph",
+          "content": "24",
+          "bbox": [
+            151,
+            98,
+            174,
+            115
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            256,
+            92,
+            540,
+            115
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Em has told me that the witches were all dead—years and\nyears ago.\"",
+          "bbox": [
+            151,
+            125,
+            636,
+            173
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "“Who is Aunt Em?” inquired the little old woman.",
+          "bbox": [
+            186,
+            173,
+            609,
+            195
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"She is my aunt who lives in Kansas, where I came\nfrom.\"",
+          "bbox": [
+            151,
+            195,
+            636,
+            240
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "The Witch of the North seemed to think for a time,\nwith her head bowed and her eyes upon the ground. Then\nshe looked up and said,",
+          "bbox": [
+            150,
+            240,
+            636,
+            309
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"I do not know where Kansas is, for I have never heard\nthat country mentioned before. But tell me, is it a civilized\ncountry?\"",
+          "bbox": [
+            150,
+            309,
+            636,
+            378
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Oh, yes;\" replied Dorothy.",
+          "bbox": [
+            185,
+            378,
+            417,
+            403
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "“ Then that accounts for it. In the civilized countries\nI believe there are no witches left; nor wizards, nor sorcer-\nesses, nor magicians. But, you see, the Land of Oz has\nnever been civilized, for we are cut off from all the rest of\nthe world. Therefore we still have witches and wizards\namongst us. ”",
+          "bbox": [
+            148,
+            401,
+            636,
+            536
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Who are the Wizards?\" asked Dorothy.",
+          "bbox": [
+            184,
+            536,
+            532,
+            561
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Oz himself is the Great Wizard,\" answered the\nWitch, sinking her voice to a whisper. \"He is more power-\nful than all the rest of us together. He lives in the City\nof Emeralds.\"",
+          "bbox": [
+            148,
+            559,
+            635,
+            650
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Dorothy was going to ask another question, but just\nthen the Munchkins, who had been standing silently by,\ngave a loud shout and pointed to the corner of the house\nwhere the Wicked Witch had been lying.",
+          "bbox": [
+            148,
+            650,
+            636,
+            746
+          ]
+        }
+      ],
+      "text": "24\n\nTHE WONDERFUL WIZARD OF OZ.\n\nEm has told me that the witches were all dead—years and\nyears ago.\"\n\n“Who is Aunt Em?” inquired the little old woman.\n\n\"She is my aunt who lives in Kansas, where I came\nfrom.\"\n\nThe Witch of the North seemed to think for a time,\nwith her head bowed and her eyes upon the ground. Then\nshe looked up and said,\n\n\"I do not know where Kansas is, for I have never heard\nthat country mentioned before. But tell me, is it a civilized\ncountry?\"\n\n\"Oh, yes;\" replied Dorothy.\n\n“ Then that accounts for it. In the civilized countries\nI believe there are no witches left; nor wizards, nor sorcer-\nesses, nor magicians. But, you see, the Land of Oz has\nnever been civilized, for we are cut off from all the rest of\nthe world. Therefore we still have witches and wizards\namongst us. ”\n\n\"Who are the Wizards?\" asked Dorothy.\n\n\"Oz himself is the Great Wizard,\" answered the\nWitch, sinking her voice to a whisper. \"He is more power-\nful than all the rest of us together. He lives in the City\nof Emeralds.\"\n\nDorothy was going to ask another question, but just\nthen the Munchkins, who had been standing silently by,\ngave a loud shout and pointed to the corner of the house\nwhere the Wicked Witch had been lying.",
+      "markdown": "24\n\nTHE WONDERFUL WIZARD OF OZ.\n\nEm has told me that the witches were all dead—years and years ago.\"\n\n“Who is Aunt Em?” inquired the little old woman.\n\n\"She is my aunt who lives in Kansas, where I came from.\"\n\nThe Witch of the North seemed to think for a time, with her head bowed and her eyes upon the ground. Then she looked up and said,\n\n\"I do not know where Kansas is, for I have never heard that country mentioned before. But tell me, is it a civilized country?\"\n\n\"Oh, yes;\" replied Dorothy.\n\n“ Then that accounts for it. In the civilized countries I believe there are no witches left; nor wizards, nor sorceresses, nor magicians. But, you see, the Land of Oz has never been civilized, for we are cut off from all the rest of the world. Therefore we still have witches and wizards amongst us. ”\n\n\"Who are the Wizards?\" asked Dorothy.\n\n\"Oz himself is the Great Wizard,\" answered the Witch, sinking her voice to a whisper. \"He is more powerful than all the rest of us together. He lives in the City of Emeralds.\"\n\nDorothy was going to ask another question, but just then the Munchkins, who had been standing silently by, gave a loud shout and pointed to the corner of the house where the Wicked Witch had been lying.\n\n"
+    }
+  ],
+  "full_text": "16\n\nTHE WONDERFUL WIZARD OF OZ.\n\nresolved to wait calmly and see what the future would\nbring. At last she crawled over the swaying floor to her\nbed, and lay down upon it; and Toto followed and lay\ndown beside her.\n\nIn spite of the swaying of the house and the wailing\nof the wind, Dorothy soon closed her eyes and fell fast\nasleep.\n\n[Figure]\n\n---\n\nChapter II.\nThe Council with\nThe Munchkins.\n\n[Figure]\n\n2. 9\n\n---\n\n<table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr><tr><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr><tr><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr><tr><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td><td>7</td></tr><tr><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td></tr><tr><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td><td>9</td></tr><tr><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr><tr><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td></tr><tr><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td></tr><tr><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td></tr><tr><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td></tr><tr><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr><tr><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr><tr><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr><tr><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td></tr><tr><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td></tr><tr><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td></tr><tr><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td><td>21</td></tr><tr><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td></tr><tr><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr><tr><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td></tr><tr><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td></tr><tr><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td></tr><tr><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td></tr><tr><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td></tr><tr><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td></tr><tr><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td></tr><tr><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td></tr><tr><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td></tr><tr><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td><td>33</td></tr><tr><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td><td>34</td></tr><tr><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td></tr><tr><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td></tr><tr><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td><td>37</td></tr><tr><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td></tr><tr><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td><td>39</td></tr><tr><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td></tr><tr><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td></tr><tr><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td></tr><tr><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td></tr><tr><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td></tr><tr><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td></tr><tr><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td></tr><tr><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td><td>47</td></tr><tr><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td></tr><tr><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td><td>49</td></tr><tr><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td></tr><tr><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td></tr><tr><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td></tr><tr><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td><td>53</td></tr><tr><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td><td>54</td></tr><tr><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td><td>55</td></tr><tr><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td><td>56</td></tr><tr><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td><td>57</td></tr><tr><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td><td>58</td></tr><tr><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td><td>59</td></tr><tr><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr><tr><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td><td>61</td></tr><tr><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td><td>62</td></tr><tr><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td><td>63</td></tr><tr><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td></tr><tr><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td></tr><tr><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td><td>66</td></tr><tr><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td><td>67</td></tr><tr><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td></tr><tr><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td><td>69</td></tr><tr><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td></tr><tr><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td><td>71</td></tr><tr><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td></tr><tr><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td><td>73</td></tr><tr><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td></tr><tr><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td><td>75</td></tr><tr><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td></tr><tr><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td><td>77</td></tr><tr><td>78</td><td>78</td><td>78</td><td>78</td><td>78</td><td\n\n---\n\n[Figure]\n\n[Figure]\n\nShe was awakened\nby a shock, so sudden\nand severe that if Doro-\nthy had not been lying on the soft\nbed she might have been hurt.\nAs it was, the jar made her catch\nher breath and wonder what had\nhappened; and Toto put his cold\nlittle nose into her face and whined dismally. Dorothy\nsat up and noticed that the house was not moving; nor was\nit dark, for the bright sunshine came in at the window,\nflooding the little room. She sprang from her bed and\nwith Toto at her heels ran and opened the door.\n\nThe little girl gave a cry of amazement and looked\n\n---\n\n20\n\nTHE WONDERFUL WIZARD OF OZ.\n\nabout her, her eyes growing bigger and bigger at the won-\nderful sights she saw.\n\nThe cyclone had set the house down, very gently—for\na cyclone—in the midst of a country of marvelous beauty.\nThere were lovely patches of green sward all about, with\nstately trees bearing rich and luscious fruits. Banks of\ngorgeous flowers were on every hand, and birds with rare\nand brilliant plumage sang and fluttered in the trees and\nbushes. A little way off was a small brook, rushing and\nsparkling along between green banks, and murmuring in a\nvoice very grateful to a little girl who had lived so long on\nthe dry, gray prairies.\n\nWhile she stood looking eagerly at the strange and\nbeautiful sights, she noticed coming toward her a group of\nthe queerest people she had ever seen. They were not as big\nas the grown folk she had always been used to; but neither\nwere they very small. In fact, they seemed about as tall\nas Dorothy, who was a well-grown child for her age,\nalthough they were, so far as looks go, many years older.\n\nThree were men and one a woman, and all were oddly\ndressed. They wore round hats that rose to a small point\na foot above their heads, with little bells around the brims\nthat tinkled sweetly as they moved. The hats of the men\nwere blue; the little woman's hat was white, and she wore\na white gown that hung in plaits from her shoulders; over it\nwere sprinkled little stars that glistened in the sun like\ndiamonds. The men were dressed in blue, of the same\n\n---\n\n[Figure]\n\n$$\n \"I am the Witch of the North.\" \n$$\n\n---\n\n<table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>13</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>15</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>17</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>18</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>24</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>26</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>28</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>29</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>31</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>33</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>34</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>36</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>37</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>39</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>40</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>41</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>42</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>43</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>44</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>45</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>46</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>47</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>48</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>49</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>51</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>52</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>53</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>55</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>56</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>57</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>58</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>59</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>61</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>62</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>63</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>64</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>65</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>66</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>67</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>68</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>69</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>70</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>71</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>72</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>73</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>74</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>75</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>76</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>77</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>78</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>79</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>81</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>82</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>83</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>84</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>85</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>86</td><td>0</td><td>0</td><td>0\n\n---\n\nTHE WONDERFUL WIZARD OF OZ.\n\n$$\n 2I \n$$\n\nshade as their hats, and wore well polished boots with a\ndeep roll of blue at the tops. The men, Dorothy thought,\nwere about as old as Uncle Henry, for two of them had\nbeards. But the little woman was doubtless much older:\nher face was covered with wrinkles, her hair was nearly\nwhite, and she walked rather stiffly.\n\nWhen these people drew near the house where Dorothy\nwas standing in the doorway, they paused and whispered\namong themselves, as if afraid to come farther. But the\nlittle old woman walked up to Dorothy, made a low bow\nand said, in a sweet voice,\n\n\"You are welcome, most noble Sorceress, to the land\nof the Munchkins. We are so grateful to you for having\nkilled the wicked Witch of the East, and for setting our\npeople free from bondage.\"\n\nDorothy listened to this speech with wonder. What\n\ncould the little woman possibly\nmean by calling her a sorceress,\nand saying she had killed the\nwicked Witch of the East ?\n\nDorothy was an innocent,\nharmless little girl, who had\nbeen carried by a cyclone\nmany miles from home;\nand she had never killed\nanything in all her life.\n\nBut the little woman\n\n[Figure]\n\n---\n\n22\n\nTHE WONDERFUL WIZARD OF OZ.\n\nevidently expected her to answer; so Dorothy said, with\nhesitation,\n\n\"You are very kind; but there must be some mistake.\nI have not killed anything.\"\n\n\"Your house did, anyway,\" replied the little old\nwoman, with a laugh; \"and that is the same thing. See!\"\nshe continued, pointing to the corner of the house; \"there\nare her two toes still sticking out from under a block of\nwood.\"\n\nDorothy looked, and gave a little cry of fright. There,\nindeed, just under the corner of the great beam the house\nrested on, two feet were sticking out, shot in silver shoes\nwith pointed toes.\n\n\"Oh, dear! oh, dear!\" cried Dorothy, clasping her\nhands together in dismay; \"the house must have fallen on\nher. What ever shall we do?\"\n\n\"There is nothing to be done,\" said the little woman,\n\ncalmly.\n\n\"But who was she?\" asked\nDorothy.\n\n\"She was the wicked Witch\n\nof the East, as I\nsaid,\" answered\nthe little woman.\n\"She has held all\nthe Munchkins\nin bondage for\n\n---\n\nTHE WONDERFUL WIZARD OF OZ.\n\n23\n\nmany years, making them slave for her night and day.\nNow they are all set free, and are grateful to you for the\nfavour.\"\n\n\"Who are the Munchkins?\" enquired Dorothy.\n\n\"They are the people who live in this land of the\nEast, where the wicked Witch ruled.\"\n\n\"Are you a Munchkin?\" asked Dorothy.\n\n\"No; but I am their friend, although I live in the land\nof the North. When they saw the Witch of the East was\ndead the Munchkins sent a swift messenger to me, and I\ncame at once. I am the Witch of the North.\"\n\n\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"\n\n\"Yes, indeed,\" answered the little woman. \"But I\nam a good witch, and the people love me. I am not as\npowerful as the wicked Witch was who ruled here, or I\nshould have set the people free myself.\"\n\n\"But I thought all witches were wicked,\" said the\ngirl, who was half frightened at facing a real witch.\n\n\"Oh, no; that is a great mistake. There were only\nfour witches in all the Land of Oz, and two of them, those\nwho live in the North and the South, are good witches. I\nknow this is true, for I am one of them myself, and cannot\nbe mistaken. Those who dwelt in the East and the West\nwere, indeed, wicked witches; but now that you have killed\none of them, there is but one wicked Witch in all the Land\nof Oz—the one who lives in the West.\"\n\n\"But,\" said Dorothy, after a moment's thought, \"Aunt\n\n---\n\n24\n\nTHE WONDERFUL WIZARD OF OZ.\n\nEm has told me that the witches were all dead—years and\nyears ago.\"\n\n“Who is Aunt Em?” inquired the little old woman.\n\n\"She is my aunt who lives in Kansas, where I came\nfrom.\"\n\nThe Witch of the North seemed to think for a time,\nwith her head bowed and her eyes upon the ground. Then\nshe looked up and said,\n\n\"I do not know where Kansas is, for I have never heard\nthat country mentioned before. But tell me, is it a civilized\ncountry?\"\n\n\"Oh, yes;\" replied Dorothy.\n\n“ Then that accounts for it. In the civilized countries\nI believe there are no witches left; nor wizards, nor sorcer-\nesses, nor magicians. But, you see, the Land of Oz has\nnever been civilized, for we are cut off from all the rest of\nthe world. Therefore we still have witches and wizards\namongst us. ”\n\n\"Who are the Wizards?\" asked Dorothy.\n\n\"Oz himself is the Great Wizard,\" answered the\nWitch, sinking her voice to a whisper. \"He is more power-\nful than all the rest of us together. He lives in the City\nof Emeralds.\"\n\nDorothy was going to ask another question, but just\nthen the Munchkins, who had been standing silently by,\ngave a loud shout and pointed to the corner of the house\nwhere the Wicked Witch had been lying.",
+  "chapters": [
+    {
+      "title": "Chapter II.\nThe Council with\nThe Munchkins.",
+      "start_page": 2,
+      "end_page": 11
+    }
+  ]
+}

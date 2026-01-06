@@ -1,0 +1,725 @@
+{
+  "metadata": {
+    "source_file": "Wizard_of_Oz_10imgpages.pdf",
+    "total_pages": 11,
+    "processing_time_seconds": 436.66,
+    "processed_at": "2026-01-06T12:50:48.652352",
+    "mode": "storybook"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "header",
+          "text": "16",
+          "bbox": [
+            130,
+            91,
+            150,
+            108
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "text": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            227,
+            86,
+            512,
+            108
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "half_para",
+          "text": "resolved to wait calmly and see what the future would\nbring. At last she crawled over the swaying floor to her\nbed, and lay down upon it; and Toto followed and lay\ndown beside her.",
+          "bbox": [
+            128,
+            118,
+            612,
+            211
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "In spite of the swaying of the house and the wailing\nof the wind, Dorothy soon closed her eyes and fell fast\nasleep.",
+          "bbox": [
+            128,
+            210,
+            612,
+            281
+          ],
+          "reading_order": 3
+        }
+      ],
+      "text": "16\n\nTHE WONDERFUL WIZARD OF OZ.\n\nresolved to wait calmly and see what the future would\nbring. At last she crawled over the swaying floor to her\nbed, and lay down upon it; and Toto followed and lay\ndown beside her.\n\nIn spite of the swaying of the house and the wailing\nof the wind, Dorothy soon closed her eyes and fell fast\nasleep."
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "sec_1",
+          "text": "Chapter II.\nThe Council with\nThe Munchkins.",
+          "bbox": [
+            82,
+            274,
+            502,
+            391
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "foot",
+          "text": "2. 9",
+          "bbox": [
+            495,
+            728,
+            537,
+            760
+          ],
+          "reading_order": 2
+        }
+      ],
+      "text": "Chapter II.\nThe Council with\nThe Munchkins.\n\n2. 9"
+    },
+    {
+      "page_number": 3,
+      "elements": [],
+      "text": ""
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "para",
+          "text": "She was awakened\nby a shock, so sudden\nand severe that if Doro-\nthy had not been lying on the soft\nbed she might have been hurt.\nAs it was, the jar made her catch\nher breath and wonder what had\nhappened; and Toto put his cold\nlittle nose into her face and whined dismally. Dorothy\nsat up and noticed that the house was not moving; nor was\nit dark, for the bright sunshine came in at the window,\nflooding the little room. She sprang from her bed and\nwith Toto at her heels ran and opened the door.",
+          "bbox": [
+            54,
+            387,
+            552,
+            707
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "The little girl gave a cry of amazement and looked",
+          "bbox": [
+            102,
+            706,
+            553,
+            733
+          ],
+          "reading_order": 3
+        }
+      ],
+      "text": "She was awakened\nby a shock, so sudden\nand severe that if Doro-\nthy had not been lying on the soft\nbed she might have been hurt.\nAs it was, the jar made her catch\nher breath and wonder what had\nhappened; and Toto put his cold\nlittle nose into her face and whined dismally. Dorothy\nsat up and noticed that the house was not moving; nor was\nit dark, for the bright sunshine came in at the window,\nflooding the little room. She sprang from her bed and\nwith Toto at her heels ran and opened the door.\n\nThe little girl gave a cry of amazement and looked"
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "label": "header",
+          "text": "20",
+          "bbox": [
+            151,
+            87,
+            172,
+            104
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "text": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            251,
+            82,
+            534,
+            105
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "half_para",
+          "text": "about her, her eyes growing bigger and bigger at the won-\nderful sights she saw.",
+          "bbox": [
+            150,
+            112,
+            631,
+            160
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "The cyclone had set the house down, very gently—for\na cyclone—in the midst of a country of marvelous beauty.\nThere were lovely patches of green sward all about, with\nstately trees bearing rich and luscious fruits. Banks of\ngorgeous flowers were on every hand, and birds with rare\nand brilliant plumage sang and fluttered in the trees and\nbushes. A little way off was a small brook, rushing and\nsparkling along between green banks, and murmuring in a\nvoice very grateful to a little girl who had lived so long on\nthe dry, gray prairies.",
+          "bbox": [
+            150,
+            159,
+            633,
+            388
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "text": "While she stood looking eagerly at the strange and\nbeautiful sights, she noticed coming toward her a group of\nthe queerest people she had ever seen. They were not as big\nas the grown folk she had always been used to; but neither\nwere they very small. In fact, they seemed about as tall\nas Dorothy, who was a well-grown child for her age,\nalthough they were, so far as looks go, many years older.",
+          "bbox": [
+            149,
+            387,
+            634,
+            548
+          ],
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "text": "Three were men and one a woman, and all were oddly\ndressed. They wore round hats that rose to a small point\na foot above their heads, with little bells around the brims\nthat tinkled sweetly as they moved. The hats of the men\nwere blue; the little woman's hat was white, and she wore\na white gown that hung in plaits from her shoulders; over it\nwere sprinkled little stars that glistened in the sun like\ndiamonds. The men were dressed in blue, of the same",
+          "bbox": [
+            149,
+            547,
+            634,
+            731
+          ],
+          "reading_order": 5
+        }
+      ],
+      "text": "20\n\nTHE WONDERFUL WIZARD OF OZ.\n\nabout her, her eyes growing bigger and bigger at the won-\nderful sights she saw.\n\nThe cyclone had set the house down, very gently—for\na cyclone—in the midst of a country of marvelous beauty.\nThere were lovely patches of green sward all about, with\nstately trees bearing rich and luscious fruits. Banks of\ngorgeous flowers were on every hand, and birds with rare\nand brilliant plumage sang and fluttered in the trees and\nbushes. A little way off was a small brook, rushing and\nsparkling along between green banks, and murmuring in a\nvoice very grateful to a little girl who had lived so long on\nthe dry, gray prairies.\n\nWhile she stood looking eagerly at the strange and\nbeautiful sights, she noticed coming toward her a group of\nthe queerest people she had ever seen. They were not as big\nas the grown folk she had always been used to; but neither\nwere they very small. In fact, they seemed about as tall\nas Dorothy, who was a well-grown child for her age,\nalthough they were, so far as looks go, many years older.\n\nThree were men and one a woman, and all were oddly\ndressed. They wore round hats that rose to a small point\na foot above their heads, with little bells around the brims\nthat tinkled sweetly as they moved. The hats of the men\nwere blue; the little woman's hat was white, and she wore\na white gown that hung in plaits from her shoulders; over it\nwere sprinkled little stars that glistened in the sun like\ndiamonds. The men were dressed in blue, of the same"
+    },
+    {
+      "page_number": 6,
+      "elements": [
+        {
+          "label": "cap",
+          "text": "$$\n \"I am the Witch of the North.\" \n$$",
+          "bbox": [
+            265,
+            817,
+            435,
+            837
+          ],
+          "reading_order": 1
+        }
+      ],
+      "text": "$$\n \"I am the Witch of the North.\" \n$$"
+    },
+    {
+      "page_number": 7,
+      "elements": [],
+      "text": ""
+    },
+    {
+      "page_number": 8,
+      "elements": [
+        {
+          "label": "header",
+          "text": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            157,
+            70,
+            448,
+            92
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "text": "$$\n 2I \n$$",
+          "bbox": [
+            529,
+            73,
+            550,
+            89
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "half_para",
+          "text": "shade as their hats, and wore well polished boots with a\ndeep roll of blue at the tops. The men, Dorothy thought,\nwere about as old as Uncle Henry, for two of them had\nbeards. But the little woman was doubtless much older:\nher face was covered with wrinkles, her hair was nearly\nwhite, and she walked rather stiffly.",
+          "bbox": [
+            55,
+            102,
+            552,
+            244
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "When these people drew near the house where Dorothy\nwas standing in the doorway, they paused and whispered\namong themselves, as if afraid to come farther. But the\nlittle old woman walked up to Dorothy, made a low bow\nand said, in a sweet voice,",
+          "bbox": [
+            57,
+            244,
+            552,
+            360
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "text": "\"You are welcome, most noble Sorceress, to the land\nof the Munchkins. We are so grateful to you for having\nkilled the wicked Witch of the East, and for setting our\npeople free from bondage.\"",
+          "bbox": [
+            58,
+            360,
+            552,
+            455
+          ],
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "text": "Dorothy listened to this speech with wonder. What",
+          "bbox": [
+            104,
+            455,
+            551,
+            476
+          ],
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "text": "could the little woman possibly\nmean by calling her a sorceress,\nand saying she had killed the\nwicked Witch of the East ?\n\nDorothy was an innocent,\nharmless little girl, who had\nbeen carried by a cyclone\nmany miles from home;\nand she had never killed\nanything in all her life.",
+          "bbox": [
+            59,
+            477,
+            344,
+            711
+          ],
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "text": "But the little woman",
+          "bbox": [
+            102,
+            711,
+            294,
+            734
+          ],
+          "reading_order": 7
+        }
+      ],
+      "text": "THE WONDERFUL WIZARD OF OZ.\n\n$$\n 2I \n$$\n\nshade as their hats, and wore well polished boots with a\ndeep roll of blue at the tops. The men, Dorothy thought,\nwere about as old as Uncle Henry, for two of them had\nbeards. But the little woman was doubtless much older:\nher face was covered with wrinkles, her hair was nearly\nwhite, and she walked rather stiffly.\n\nWhen these people drew near the house where Dorothy\nwas standing in the doorway, they paused and whispered\namong themselves, as if afraid to come farther. But the\nlittle old woman walked up to Dorothy, made a low bow\nand said, in a sweet voice,\n\n\"You are welcome, most noble Sorceress, to the land\nof the Munchkins. We are so grateful to you for having\nkilled the wicked Witch of the East, and for setting our\npeople free from bondage.\"\n\nDorothy listened to this speech with wonder. What\n\ncould the little woman possibly\nmean by calling her a sorceress,\nand saying she had killed the\nwicked Witch of the East ?\n\nDorothy was an innocent,\nharmless little girl, who had\nbeen carried by a cyclone\nmany miles from home;\nand she had never killed\nanything in all her life.\n\nBut the little woman"
+    },
+    {
+      "page_number": 9,
+      "elements": [
+        {
+          "label": "header",
+          "text": "22",
+          "bbox": [
+            146,
+            92,
+            167,
+            108
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "text": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            246,
+            85,
+            527,
+            108
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "half_para",
+          "text": "evidently expected her to answer; so Dorothy said, with\nhesitation,",
+          "bbox": [
+            147,
+            117,
+            626,
+            164
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "\"You are very kind; but there must be some mistake.\nI have not killed anything.\"",
+          "bbox": [
+            147,
+            163,
+            626,
+            212
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "text": "\"Your house did, anyway,\" replied the little old\nwoman, with a laugh; \"and that is the same thing. See!\"\nshe continued, pointing to the corner of the house; \"there\nare her two toes still sticking out from under a block of\nwood.\"",
+          "bbox": [
+            147,
+            211,
+            629,
+            323
+          ],
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "text": "Dorothy looked, and gave a little cry of fright. There,\nindeed, just under the corner of the great beam the house\nrested on, two feet were sticking out, shot in silver shoes\nwith pointed toes.",
+          "bbox": [
+            147,
+            324,
+            629,
+            415
+          ],
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "text": "\"Oh, dear! oh, dear!\" cried Dorothy, clasping her\nhands together in dismay; \"the house must have fallen on\nher. What ever shall we do?\"",
+          "bbox": [
+            147,
+            414,
+            629,
+            482
+          ],
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "text": "\"There is nothing to be done,\" said the little woman,",
+          "bbox": [
+            182,
+            482,
+            629,
+            505
+          ],
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "text": "calmly.",
+          "bbox": [
+            368,
+            509,
+            431,
+            529
+          ],
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "text": "\"But who was she?\" asked\nDorothy.",
+          "bbox": [
+            368,
+            529,
+            629,
+            577
+          ],
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "text": "\"She was the wicked Witch",
+          "bbox": [
+            402,
+            576,
+            629,
+            600
+          ],
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "text": "of the East, as I\nsaid,\" answered\nthe little woman.\n\"She has held all\nthe Munchkins\nin bondage for",
+          "bbox": [
+            483,
+            600,
+            630,
+            737
+          ],
+          "reading_order": 11
+        }
+      ],
+      "text": "22\n\nTHE WONDERFUL WIZARD OF OZ.\n\nevidently expected her to answer; so Dorothy said, with\nhesitation,\n\n\"You are very kind; but there must be some mistake.\nI have not killed anything.\"\n\n\"Your house did, anyway,\" replied the little old\nwoman, with a laugh; \"and that is the same thing. See!\"\nshe continued, pointing to the corner of the house; \"there\nare her two toes still sticking out from under a block of\nwood.\"\n\nDorothy looked, and gave a little cry of fright. There,\nindeed, just under the corner of the great beam the house\nrested on, two feet were sticking out, shot in silver shoes\nwith pointed toes.\n\n\"Oh, dear! oh, dear!\" cried Dorothy, clasping her\nhands together in dismay; \"the house must have fallen on\nher. What ever shall we do?\"\n\n\"There is nothing to be done,\" said the little woman,\n\ncalmly.\n\n\"But who was she?\" asked\nDorothy.\n\n\"She was the wicked Witch\n\nof the East, as I\nsaid,\" answered\nthe little woman.\n\"She has held all\nthe Munchkins\nin bondage for"
+    },
+    {
+      "page_number": 10,
+      "elements": [
+        {
+          "label": "header",
+          "text": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            157,
+            83,
+            448,
+            106
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "text": "23",
+          "bbox": [
+            533,
+            86,
+            554,
+            103
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "half_para",
+          "text": "many years, making them slave for her night and day.\nNow they are all set free, and are grateful to you for the\nfavour.\"",
+          "bbox": [
+            59,
+            114,
+            555,
+            185
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "\"Who are the Munchkins?\" enquired Dorothy.",
+          "bbox": [
+            95,
+            186,
+            490,
+            211
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "text": "\"They are the people who live in this land of the\nEast, where the wicked Witch ruled.\"",
+          "bbox": [
+            60,
+            211,
+            554,
+            255
+          ],
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "text": "\"Are you a Munchkin?\" asked Dorothy.",
+          "bbox": [
+            96,
+            255,
+            435,
+            279
+          ],
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "text": "\"No; but I am their friend, although I live in the land\nof the North. When they saw the Witch of the East was\ndead the Munchkins sent a swift messenger to me, and I\ncame at once. I am the Witch of the North.\"",
+          "bbox": [
+            60,
+            279,
+            556,
+            372
+          ],
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "text": "\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"",
+          "bbox": [
+            97,
+            373,
+            555,
+            397
+          ],
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "text": "\"Yes, indeed,\" answered the little woman. \"But I\nam a good witch, and the people love me. I am not as\npowerful as the wicked Witch was who ruled here, or I\nshould have set the people free myself.\"",
+          "bbox": [
+            61,
+            396,
+            557,
+            490
+          ],
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "text": "\"But I thought all witches were wicked,\" said the\ngirl, who was half frightened at facing a real witch.",
+          "bbox": [
+            63,
+            489,
+            558,
+            536
+          ],
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "text": "\"Oh, no; that is a great mistake. There were only\nfour witches in all the Land of Oz, and two of them, those\nwho live in the North and the South, are good witches. I\nknow this is true, for I am one of them myself, and cannot\nbe mistaken. Those who dwelt in the East and the West\nwere, indeed, wicked witches; but now that you have killed\none of them, there is but one wicked Witch in all the Land\nof Oz—the one who lives in the West.\"",
+          "bbox": [
+            64,
+            535,
+            559,
+            722
+          ],
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "text": "\"But,\" said Dorothy, after a moment's thought, \"Aunt",
+          "bbox": [
+            100,
+            721,
+            559,
+            747
+          ],
+          "reading_order": 11
+        }
+      ],
+      "text": "THE WONDERFUL WIZARD OF OZ.\n\n23\n\nmany years, making them slave for her night and day.\nNow they are all set free, and are grateful to you for the\nfavour.\"\n\n\"Who are the Munchkins?\" enquired Dorothy.\n\n\"They are the people who live in this land of the\nEast, where the wicked Witch ruled.\"\n\n\"Are you a Munchkin?\" asked Dorothy.\n\n\"No; but I am their friend, although I live in the land\nof the North. When they saw the Witch of the East was\ndead the Munchkins sent a swift messenger to me, and I\ncame at once. I am the Witch of the North.\"\n\n\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"\n\n\"Yes, indeed,\" answered the little woman. \"But I\nam a good witch, and the people love me. I am not as\npowerful as the wicked Witch was who ruled here, or I\nshould have set the people free myself.\"\n\n\"But I thought all witches were wicked,\" said the\ngirl, who was half frightened at facing a real witch.\n\n\"Oh, no; that is a great mistake. There were only\nfour witches in all the Land of Oz, and two of them, those\nwho live in the North and the South, are good witches. I\nknow this is true, for I am one of them myself, and cannot\nbe mistaken. Those who dwelt in the East and the West\nwere, indeed, wicked witches; but now that you have killed\none of them, there is but one wicked Witch in all the Land\nof Oz—the one who lives in the West.\"\n\n\"But,\" said Dorothy, after a moment's thought, \"Aunt"
+    },
+    {
+      "page_number": 11,
+      "elements": [
+        {
+          "label": "header",
+          "text": "24",
+          "bbox": [
+            151,
+            98,
+            174,
+            115
+          ],
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "text": "THE WONDERFUL WIZARD OF OZ.",
+          "bbox": [
+            256,
+            92,
+            540,
+            115
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "text": "Em has told me that the witches were all dead—years and\nyears ago.\"",
+          "bbox": [
+            151,
+            125,
+            636,
+            173
+          ],
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "text": "“Who is Aunt Em?” inquired the little old woman.",
+          "bbox": [
+            186,
+            173,
+            609,
+            195
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "text": "\"She is my aunt who lives in Kansas, where I came\nfrom.\"",
+          "bbox": [
+            151,
+            195,
+            636,
+            240
+          ],
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "text": "The Witch of the North seemed to think for a time,\nwith her head bowed and her eyes upon the ground. Then\nshe looked up and said,",
+          "bbox": [
+            150,
+            240,
+            636,
+            309
+          ],
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "text": "\"I do not know where Kansas is, for I have never heard\nthat country mentioned before. But tell me, is it a civilized\ncountry?\"",
+          "bbox": [
+            150,
+            309,
+            636,
+            378
+          ],
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "text": "\"Oh, yes;\" replied Dorothy.",
+          "bbox": [
+            185,
+            378,
+            417,
+            403
+          ],
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "text": "“ Then that accounts for it. In the civilized countries\nI believe there are no witches left; nor wizards, nor sorcer-\nesses, nor magicians. But, you see, the Land of Oz has\nnever been civilized, for we are cut off from all the rest of\nthe world. Therefore we still have witches and wizards\namongst us. ”",
+          "bbox": [
+            148,
+            401,
+            636,
+            536
+          ],
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "text": "\"Who are the Wizards?\" asked Dorothy.",
+          "bbox": [
+            184,
+            536,
+            532,
+            561
+          ],
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "text": "\"Oz himself is the Great Wizard,\" answered the\nWitch, sinking her voice to a whisper. \"He is more power-\nful than all the rest of us together. He lives in the City\nof Emeralds.\"",
+          "bbox": [
+            148,
+            559,
+            635,
+            650
+          ],
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "text": "Dorothy was going to ask another question, but just\nthen the Munchkins, who had been standing silently by,\ngave a loud shout and pointed to the corner of the house\nwhere the Wicked Witch had been lying.",
+          "bbox": [
+            148,
+            650,
+            636,
+            746
+          ],
+          "reading_order": 11
+        }
+      ],
+      "text": "24\n\nTHE WONDERFUL WIZARD OF OZ.\n\nEm has told me that the witches were all dead—years and\nyears ago.\"\n\n“Who is Aunt Em?” inquired the little old woman.\n\n\"She is my aunt who lives in Kansas, where I came\nfrom.\"\n\nThe Witch of the North seemed to think for a time,\nwith her head bowed and her eyes upon the ground. Then\nshe looked up and said,\n\n\"I do not know where Kansas is, for I have never heard\nthat country mentioned before. But tell me, is it a civilized\ncountry?\"\n\n\"Oh, yes;\" replied Dorothy.\n\n“ Then that accounts for it. In the civilized countries\nI believe there are no witches left; nor wizards, nor sorcer-\nesses, nor magicians. But, you see, the Land of Oz has\nnever been civilized, for we are cut off from all the rest of\nthe world. Therefore we still have witches and wizards\namongst us. ”\n\n\"Who are the Wizards?\" asked Dorothy.\n\n\"Oz himself is the Great Wizard,\" answered the\nWitch, sinking her voice to a whisper. \"He is more power-\nful than all the rest of us together. He lives in the City\nof Emeralds.\"\n\nDorothy was going to ask another question, but just\nthen the Munchkins, who had been standing silently by,\ngave a loud shout and pointed to the corner of the house\nwhere the Wicked Witch had been lying."
+    }
+  ],
+  "full_text": "--- Page 1 ---\n\n16\n\nTHE WONDERFUL WIZARD OF OZ.\n\nresolved to wait calmly and see what the future would\nbring. At last she crawled over the swaying floor to her\nbed, and lay down upon it; and Toto followed and lay\ndown beside her.\n\nIn spite of the swaying of the house and the wailing\nof the wind, Dorothy soon closed her eyes and fell fast\nasleep.\n\n--- Page 2 ---\n\nChapter II.\nThe Council with\nThe Munchkins.\n\n2. 9\n\n--- Page 4 ---\n\nShe was awakened\nby a shock, so sudden\nand severe that if Doro-\nthy had not been lying on the soft\nbed she might have been hurt.\nAs it was, the jar made her catch\nher breath and wonder what had\nhappened; and Toto put his cold\nlittle nose into her face and whined dismally. Dorothy\nsat up and noticed that the house was not moving; nor was\nit dark, for the bright sunshine came in at the window,\nflooding the little room. She sprang from her bed and\nwith Toto at her heels ran and opened the door.\n\nThe little girl gave a cry of amazement and looked\n\n--- Page 5 ---\n\n20\n\nTHE WONDERFUL WIZARD OF OZ.\n\nabout her, her eyes growing bigger and bigger at the won-\nderful sights she saw.\n\nThe cyclone had set the house down, very gently—for\na cyclone—in the midst of a country of marvelous beauty.\nThere were lovely patches of green sward all about, with\nstately trees bearing rich and luscious fruits. Banks of\ngorgeous flowers were on every hand, and birds with rare\nand brilliant plumage sang and fluttered in the trees and\nbushes. A little way off was a small brook, rushing and\nsparkling along between green banks, and murmuring in a\nvoice very grateful to a little girl who had lived so long on\nthe dry, gray prairies.\n\nWhile she stood looking eagerly at the strange and\nbeautiful sights, she noticed coming toward her a group of\nthe queerest people she had ever seen. They were not as big\nas the grown folk she had always been used to; but neither\nwere they very small. In fact, they seemed about as tall\nas Dorothy, who was a well-grown child for her age,\nalthough they were, so far as looks go, many years older.\n\nThree were men and one a woman, and all were oddly\ndressed. They wore round hats that rose to a small point\na foot above their heads, with little bells around the brims\nthat tinkled sweetly as they moved. The hats of the men\nwere blue; the little woman's hat was white, and she wore\na white gown that hung in plaits from her shoulders; over it\nwere sprinkled little stars that glistened in the sun like\ndiamonds. The men were dressed in blue, of the same\n\n--- Page 6 ---\n\n$$\n \"I am the Witch of the North.\" \n$$\n\n--- Page 8 ---\n\nTHE WONDERFUL WIZARD OF OZ.\n\n$$\n 2I \n$$\n\nshade as their hats, and wore well polished boots with a\ndeep roll of blue at the tops. The men, Dorothy thought,\nwere about as old as Uncle Henry, for two of them had\nbeards. But the little woman was doubtless much older:\nher face was covered with wrinkles, her hair was nearly\nwhite, and she walked rather stiffly.\n\nWhen these people drew near the house where Dorothy\nwas standing in the doorway, they paused and whispered\namong themselves, as if afraid to come farther. But the\nlittle old woman walked up to Dorothy, made a low bow\nand said, in a sweet voice,\n\n\"You are welcome, most noble Sorceress, to the land\nof the Munchkins. We are so grateful to you for having\nkilled the wicked Witch of the East, and for setting our\npeople free from bondage.\"\n\nDorothy listened to this speech with wonder. What\n\ncould the little woman possibly\nmean by calling her a sorceress,\nand saying she had killed the\nwicked Witch of the East ?\n\nDorothy was an innocent,\nharmless little girl, who had\nbeen carried by a cyclone\nmany miles from home;\nand she had never killed\nanything in all her life.\n\nBut the little woman\n\n--- Page 9 ---\n\n22\n\nTHE WONDERFUL WIZARD OF OZ.\n\nevidently expected her to answer; so Dorothy said, with\nhesitation,\n\n\"You are very kind; but there must be some mistake.\nI have not killed anything.\"\n\n\"Your house did, anyway,\" replied the little old\nwoman, with a laugh; \"and that is the same thing. See!\"\nshe continued, pointing to the corner of the house; \"there\nare her two toes still sticking out from under a block of\nwood.\"\n\nDorothy looked, and gave a little cry of fright. There,\nindeed, just under the corner of the great beam the house\nrested on, two feet were sticking out, shot in silver shoes\nwith pointed toes.\n\n\"Oh, dear! oh, dear!\" cried Dorothy, clasping her\nhands together in dismay; \"the house must have fallen on\nher. What ever shall we do?\"\n\n\"There is nothing to be done,\" said the little woman,\n\ncalmly.\n\n\"But who was she?\" asked\nDorothy.\n\n\"She was the wicked Witch\n\nof the East, as I\nsaid,\" answered\nthe little woman.\n\"She has held all\nthe Munchkins\nin bondage for\n\n--- Page 10 ---\n\nTHE WONDERFUL WIZARD OF OZ.\n\n23\n\nmany years, making them slave for her night and day.\nNow they are all set free, and are grateful to you for the\nfavour.\"\n\n\"Who are the Munchkins?\" enquired Dorothy.\n\n\"They are the people who live in this land of the\nEast, where the wicked Witch ruled.\"\n\n\"Are you a Munchkin?\" asked Dorothy.\n\n\"No; but I am their friend, although I live in the land\nof the North. When they saw the Witch of the East was\ndead the Munchkins sent a swift messenger to me, and I\ncame at once. I am the Witch of the North.\"\n\n\"Oh, gracious!\" cried Dorothy; \"are you a real witch?\"\n\n\"Yes, indeed,\" answered the little woman. \"But I\nam a good witch, and the people love me. I am not as\npowerful as the wicked Witch was who ruled here, or I\nshould have set the people free myself.\"\n\n\"But I thought all witches were wicked,\" said the\ngirl, who was half frightened at facing a real witch.\n\n\"Oh, no; that is a great mistake. There were only\nfour witches in all the Land of Oz, and two of them, those\nwho live in the North and the South, are good witches. I\nknow this is true, for I am one of them myself, and cannot\nbe mistaken. Those who dwelt in the East and the West\nwere, indeed, wicked witches; but now that you have killed\none of them, there is but one wicked Witch in all the Land\nof Oz—the one who lives in the West.\"\n\n\"But,\" said Dorothy, after a moment's thought, \"Aunt\n\n--- Page 11 ---\n\n24\n\nTHE WONDERFUL WIZARD OF OZ.\n\nEm has told me that the witches were all dead—years and\nyears ago.\"\n\n“Who is Aunt Em?” inquired the little old woman.\n\n\"She is my aunt who lives in Kansas, where I came\nfrom.\"\n\nThe Witch of the North seemed to think for a time,\nwith her head bowed and her eyes upon the ground. Then\nshe looked up and said,\n\n\"I do not know where Kansas is, for I have never heard\nthat country mentioned before. But tell me, is it a civilized\ncountry?\"\n\n\"Oh, yes;\" replied Dorothy.\n\n“ Then that accounts for it. In the civilized countries\nI believe there are no witches left; nor wizards, nor sorcer-\nesses, nor magicians. But, you see, the Land of Oz has\nnever been civilized, for we are cut off from all the rest of\nthe world. Therefore we still have witches and wizards\namongst us. ”\n\n\"Who are the Wizards?\" asked Dorothy.\n\n\"Oz himself is the Great Wizard,\" answered the\nWitch, sinking her voice to a whisper. \"He is more power-\nful than all the rest of us together. He lives in the City\nof Emeralds.\"\n\nDorothy was going to ask another question, but just\nthen the Munchkins, who had been standing silently by,\ngave a loud shout and pointed to the corner of the house\nwhere the Wicked Witch had been lying."
+}

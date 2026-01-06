@@ -158,33 +158,66 @@ class DolphinModel:
         
         return image
     
-    def _chat(self, prompt: str, image):
-        """Run inference on the model."""
+    def _chat(self, prompt, image):
+        """
+        Run inference on the model. Supports both single and batch inputs.
+        
+        Args:
+            prompt: Single prompt string or list of prompts
+            image: Single PIL Image or list of PIL Images
+            
+        Returns:
+            Single result string or list of result strings
+        """
         from qwen_vl_utils import process_vision_info
         
-        # Resize image
-        processed_image = self._resize_image(image)
+        # Check if we're dealing with a batch
+        is_batch = isinstance(image, list)
         
-        # Create message
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {"type": "image", "image": processed_image},
-                    {"type": "text", "text": prompt}
-                ],
-            }
+        if not is_batch:
+            images = [image]
+            prompts = [prompt]
+        else:
+            images = image
+            prompts = prompt if isinstance(prompt, list) else [prompt] * len(images)
+        
+        assert len(images) == len(prompts)
+        
+        # Preprocess all images
+        processed_images = [self._resize_image(img) for img in images]
+        
+        # Generate all messages
+        all_messages = []
+        for img, question in zip(processed_images, prompts):
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "image": img},
+                        {"type": "text", "text": question}
+                    ],
+                }
+            ]
+            all_messages.append(messages)
+        
+        # Prepare all texts
+        texts = [
+            self.processor.apply_chat_template(
+                msgs, tokenize=False, add_generation_prompt=True
+            )
+            for msgs in all_messages
         ]
         
-        # Prepare inputs
-        text = self.processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
-        )
-        image_inputs, _ = process_vision_info(messages)
+        # Collect all image inputs
+        all_image_inputs = []
+        for msgs in all_messages:
+            image_inputs, _ = process_vision_info(msgs)
+            all_image_inputs.extend(image_inputs)
         
+        # Prepare model inputs
         inputs = self.processor(
-            text=[text],
-            images=image_inputs if image_inputs else None,
+            text=texts,
+            images=all_image_inputs if all_image_inputs else None,
             padding=True,
             return_tensors="pt",
         )
@@ -203,13 +236,16 @@ class DolphinModel:
             for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
         
-        result = self.processor.batch_decode(
+        results = self.processor.batch_decode(
             generated_ids_trimmed,
             skip_special_tokens=True,
             clean_up_tokenization_spaces=False
-        )[0]
+        )
         
-        return result
+        # Return single result for single input
+        if not is_batch:
+            return results[0]
+        return results
     
     @modal.method()
     def parse_pdf(self, pdf_bytes: bytes) -> dict:
@@ -271,8 +307,16 @@ class DolphinModel:
                     # Treat entire page as one text element
                     layout_list = [([0, 0, pil_image.size[0], pil_image.size[1]], 'distorted_page', [])]
                 
-                # Stage 2: Element-level recognition
-                recognition_results = []
+                # Stage 2: Batched element-level recognition
+                # Group elements by type for batch processing
+                MAX_BATCH_SIZE = 4  # Process 4 elements at a time
+                
+                text_elements = []  # Regular text
+                tab_elements = []   # Tables
+                equ_elements = []   # Equations
+                code_elements = []  # Code blocks
+                figure_results = [] # Figures (no OCR needed)
+                
                 reading_order = 0
                 
                 for bbox, label, tags in layout_list:
@@ -289,41 +333,84 @@ class DolphinModel:
                         if crop.size[0] <= 3 or crop.size[1] <= 3:
                             continue
                         
-                        # Skip figures (just note them)
+                        element_info = {
+                            "crop": crop,
+                            "label": label,
+                            "bbox": [x1, y1, x2, y2],
+                            "reading_order": reading_order,
+                            "tags": tags,
+                        }
+                        
+                        # Group by element type
                         if label == "fig":
-                            recognition_results.append({
+                            figure_results.append({
                                 "label": label,
                                 "text": "[Figure]",
                                 "bbox": [x1, y1, x2, y2],
                                 "reading_order": reading_order,
                             })
-                            reading_order += 1
-                            continue
-                        
-                        # Choose prompt based on element type
-                        if label == "tab":
-                            prompt = "Convert the table to markdown format."
+                        elif label == "tab":
+                            tab_elements.append(element_info)
                         elif label == "equ":
-                            prompt = "Convert the equation to LaTeX format."
+                            equ_elements.append(element_info)
                         elif label == "code":
-                            prompt = "Read the code in the image."
+                            code_elements.append(element_info)
                         else:
-                            prompt = "Read text in the image."
+                            text_elements.append(element_info)
                         
-                        # Run element recognition
-                        text_output = self._chat(prompt, crop)
-                        
-                        recognition_results.append({
-                            "label": label,
-                            "text": text_output.strip(),
-                            "bbox": [x1, y1, x2, y2],
-                            "reading_order": reading_order,
-                        })
                         reading_order += 1
                         
                     except Exception as e:
-                        print(f"Error processing element: {e}")
+                        print(f"Error preparing element: {e}")
                         continue
+                
+                # Helper function to process elements in batches
+                def process_batch(elements, prompt):
+                    results = []
+                    for i in range(0, len(elements), MAX_BATCH_SIZE):
+                        batch = elements[i:i + MAX_BATCH_SIZE]
+                        crops = [e["crop"] for e in batch]
+                        prompts = [prompt] * len(crops)
+                        
+                        # Batch inference
+                        batch_results = self._chat(prompts, crops)
+                        
+                        for j, text in enumerate(batch_results):
+                            elem = batch[j]
+                            results.append({
+                                "label": elem["label"],
+                                "text": text.strip(),
+                                "bbox": elem["bbox"],
+                                "reading_order": elem["reading_order"],
+                            })
+                    return results
+                
+                # Process each element type in batches
+                recognition_results = figure_results.copy()
+                
+                if tab_elements:
+                    print(f"  Processing {len(tab_elements)} tables in batches...")
+                    recognition_results.extend(
+                        process_batch(tab_elements, "Convert the table to markdown format.")
+                    )
+                
+                if equ_elements:
+                    print(f"  Processing {len(equ_elements)} equations in batches...")
+                    recognition_results.extend(
+                        process_batch(equ_elements, "Convert the equation to LaTeX format.")
+                    )
+                
+                if code_elements:
+                    print(f"  Processing {len(code_elements)} code blocks in batches...")
+                    recognition_results.extend(
+                        process_batch(code_elements, "Read the code in the image.")
+                    )
+                
+                if text_elements:
+                    print(f"  Processing {len(text_elements)} text elements in batches...")
+                    recognition_results.extend(
+                        process_batch(text_elements, "Read text in the image.")
+                    )
                 
                 # Sort by reading order
                 recognition_results.sort(key=lambda x: x.get("reading_order", 0))
@@ -364,6 +451,149 @@ class DolphinModel:
                 "total_pages": 0,
                 "pages": [],
                 "markdown": "",
+            }
+    
+    @modal.method()
+    def parse_storybook(self, pdf_bytes: bytes) -> dict:
+        """
+        Parse a storybook PDF - optimized for children's books.
+        Only processes TEXT elements (no tables, equations, code).
+        Much faster than parse_pdf for simple illustrated books.
+        
+        Args:
+            pdf_bytes: Raw PDF file bytes
+            
+        Returns:
+            Dictionary with extracted text content
+        """
+        import pymupdf
+        from PIL import Image
+        from utils.utils import parse_layout_string, process_coordinates
+        
+        MAX_BATCH_SIZE = 4
+        
+        try:
+            doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
+            total_pages = len(doc)
+            
+            all_page_results = []
+            all_text_parts = []
+            
+            for page_idx in range(total_pages):
+                print(f"Processing page {page_idx + 1}/{total_pages}...")
+                
+                page = doc[page_idx]
+                
+                # Render page as image
+                target_size = 896
+                rect = page.rect
+                scale = target_size / max(rect.width, rect.height)
+                mat = pymupdf.Matrix(scale, scale)
+                pix = page.get_pixmap(matrix=mat)
+                
+                img_data = pix.tobytes("png")
+                pil_image = Image.open(io.BytesIO(img_data)).convert("RGB")
+                
+                # Layout analysis
+                layout_output = self._chat(
+                    "Parse the reading order of this document.",
+                    pil_image
+                )
+                
+                layout_list = parse_layout_string(layout_output)
+                
+                if not layout_list or not (layout_output.startswith("[") and layout_output.endswith("]")):
+                    layout_list = [([0, 0, pil_image.size[0], pil_image.size[1]], 'distorted_page', [])]
+                
+                # Collect ONLY text elements (skip tables, equations, code, figures)
+                text_elements = []
+                reading_order = 0
+                
+                for bbox, label, tags in layout_list:
+                    try:
+                        # Skip non-text elements
+                        if label in ["tab", "equ", "code", "fig", "figure", "table"]:
+                            reading_order += 1
+                            continue
+                        
+                        if label == "distorted_page":
+                            x1, y1, x2, y2 = 0, 0, pil_image.size[0], pil_image.size[1]
+                            crop = pil_image
+                        else:
+                            x1, y1, x2, y2 = process_coordinates(bbox, pil_image)
+                            crop = pil_image.crop((x1, y1, x2, y2))
+                        
+                        if crop.size[0] <= 3 or crop.size[1] <= 3:
+                            continue
+                        
+                        text_elements.append({
+                            "crop": crop,
+                            "label": label,
+                            "bbox": [x1, y1, x2, y2],
+                            "reading_order": reading_order,
+                        })
+                        reading_order += 1
+                        
+                    except Exception as e:
+                        print(f"Error preparing element: {e}")
+                        continue
+                
+                # Batch process text elements
+                recognition_results = []
+                
+                if text_elements:
+                    print(f"  Processing {len(text_elements)} text elements...")
+                    
+                    for i in range(0, len(text_elements), MAX_BATCH_SIZE):
+                        batch = text_elements[i:i + MAX_BATCH_SIZE]
+                        crops = [e["crop"] for e in batch]
+                        prompts = ["Read text in the image."] * len(crops)
+                        
+                        batch_results = self._chat(prompts, crops)
+                        
+                        for j, text in enumerate(batch_results):
+                            elem = batch[j]
+                            recognition_results.append({
+                                "label": elem["label"],
+                                "text": text.strip(),
+                                "bbox": elem["bbox"],
+                                "reading_order": elem["reading_order"],
+                            })
+                
+                # Sort and combine text
+                recognition_results.sort(key=lambda x: x.get("reading_order", 0))
+                page_text = "\n\n".join([r.get("text", "") for r in recognition_results])
+                
+                page_result = {
+                    "page_number": page_idx + 1,
+                    "elements": recognition_results,
+                    "text": page_text,
+                }
+                all_page_results.append(page_result)
+                
+                if page_text.strip():
+                    all_text_parts.append(f"--- Page {page_idx + 1} ---\n\n{page_text}")
+            
+            doc.close()
+            
+            full_text = "\n\n".join(all_text_parts)
+            
+            return {
+                "success": True,
+                "total_pages": total_pages,
+                "pages": all_page_results,
+                "full_text": full_text,
+            }
+            
+        except Exception as e:
+            import traceback
+            return {
+                "success": False,
+                "error": str(e),
+                "traceback": traceback.format_exc(),
+                "total_pages": 0,
+                "pages": [],
+                "full_text": "",
             }
     
     @modal.method()
