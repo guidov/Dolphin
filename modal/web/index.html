@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐬 Dolphin PDF Parser</title>
+    <meta name="description" content="AI-powered PDF to text conversion using ByteDance's Dolphin-v2 model. Extract text, tables, and formulas from any document.">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐬</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="bg-gradient"></div>
+        <div class="bg-particles" id="particles"></div>
+
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🐬</span>
+                <h1>Dolphin PDF Parser</h1>
+            </div>
+            <p class="tagline">AI-powered document parsing with ByteDance's Dolphin-v2</p>
+            <div class="header-badges">
+                <span class="badge">🚀 GPU Accelerated</span>
+                <span class="badge">📊 Tables & Formulas</span>
+                <span class="badge">🎯 High Accuracy</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Upload Section -->
+            <div id="upload-section" class="upload-section">
+                <div class="upload-zone" id="drop-zone">
+                    <div class="upload-visual">
+                        <div class="upload-icon-container">
+                            <div class="upload-icon-ring"></div>
+                            <div class="upload-icon">📄</div>
+                        </div>
+                    </div>
+                    <h2>Drop your PDF here</h2>
+                    <p>or click to browse your files</p>
+                    <input type="file" id="file-input" accept=".pdf,.png,.jpg,.jpeg" hidden>
+                    <button class="browse-btn" onclick="document.getElementById('file-input').click()">
+                        <span class="btn-icon">📁</span>
+                        Browse Files
+                    </button>
+                    <p class="file-types">Supports: PDF, PNG, JPG, JPEG • Max 20MB</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3>Smart Text Extraction</h3>
+                        <p>Accurately extract text with reading order preservation</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Table Recognition</h3>
+                        <p>Convert complex tables to clean markdown format</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔢</div>
+                        <h3>Formula Parsing</h3>
+                        <p>Extract mathematical formulas as LaTeX</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🖼️</div>
+                        <h3>Multi-page Support</h3>
+                        <p>Process entire PDF documents seamlessly</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Processing Section -->
+            <div id="processing-section" class="processing-section hidden">
+                <div class="processing-card">
+                    <div class="processing-animation">
+                        <div class="processing-ring"></div>
+                        <div class="processing-ring delay-1"></div>
+                        <div class="processing-ring delay-2"></div>
+                        <div class="processing-icon">🐬</div>
+                    </div>
+                    <h2>Processing your document...</h2>
+                    <p id="processing-status">Uploading file...</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <p class="processing-note">
+                        <span class="note-icon">💡</span>
+                        First request may take 30-60 seconds while the GPU warms up
+                    </p>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="results-section hidden">
+                <div class="results-header">
+                    <div class="results-title">
+                        <span class="success-icon">✅</span>
+                        <h2>Extraction Complete</h2>
+                    </div>
+                    <div class="results-actions">
+                        <button class="action-btn" onclick="copyToClipboard()">
+                            <span class="btn-icon">📋</span>
+                            Copy
+                        </button>
+                        <button class="action-btn" onclick="downloadMarkdown()">
+                            <span class="btn-icon">⬇️</span>
+                            Download MD
+                        </button>
+                        <button class="action-btn" onclick="downloadJSON()">
+                            <span class="btn-icon">📦</span>
+                            Download JSON
+                        </button>
+                        <button class="action-btn secondary" onclick="resetApp()">
+                            <span class="btn-icon">🔄</span>
+                            New Document
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="results-container">
+                    <div class="results-tabs">
+                        <button class="tab-btn active" data-tab="markdown" onclick="switchTab('markdown')">
+                            📝 Markdown
+                        </button>
+                        <button class="tab-btn" data-tab="raw" onclick="switchTab('raw')">
+                            📄 Raw Text
+                        </button>
+                    </div>
+                    <div class="results-content" id="results-content">
+                        <!-- Content will be inserted here -->
+                    </div>
+                </div>
+                
+                <div class="page-info" id="page-info"></div>
+            </div>
+
+            <!-- Error Section -->
+            <div id="error-section" class="error-section hidden">
+                <div class="error-card">
+                    <div class="error-icon-container">
+                        <div class="error-icon">❌</div>
+                    </div>
+                    <h2>Something went wrong</h2>
+                    <p id="error-message">An unexpected error occurred</p>
+                    <button class="action-btn primary" onclick="resetApp()">
+                        <span class="btn-icon">🔄</span>
+                        Try Again
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>
+                Powered by 
+                <a href="https://github.com/bytedance/Dolphin" target="_blank" rel="noopener">ByteDance Dolphin-v2</a> 
+                running on 
+                <a href="https://modal.com" target="_blank" rel="noopener">Modal</a>
+            </p>
+            <p class="footer-sub">Open source document AI • Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
