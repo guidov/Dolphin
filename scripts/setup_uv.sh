@@ -12,11 +12,13 @@ then
 fi
 
 # Create a clean virtual environment in the current directory
-echo "🧹 Creating a clean virtual environment..."
-uv venv
+echo "🧹 Creating a clean virtual environment (.venv-modal)..."
+uv venv .venv-modal
 
 # Synchronize dependencies from pyproject.toml
 echo "📥 Installing only essential client dependencies..."
+# Point uv to the specific venv
+export UV_PROJECT_ENVIRONMENT=.venv-modal
 uv sync
 
 echo "✅ Clean environment setup complete!"

@@ -196,6 +196,7 @@ To keep your local system clean and avoid dependency conflicts (like the "Mega-E
 ./scripts/setup_uv.sh
 
 # 2. Use the isolated environment
+# Note: uv will use the environment in .venv-modal
 uv run modal deploy dolphin_modal_app/dolphin_modal.py
 ```
 
