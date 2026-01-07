@@ -94,7 +94,7 @@ def download_model():
     gpu="T4",  # Cheaper option (~$0.15/hr) - 16GB VRAM
     volumes={"/model_cache": model_volume},
     scaledown_window=300,  # Keep warm for 5 minutes
-    timeout=3600,  # 1 hour timeout for very large books
+    timeout=7200,  # 2 hours for very large books (e.g. 200+ pages)
 )
 class DolphinModel:
     """
@@ -716,7 +716,7 @@ web_image = (
 static_path = Path(__file__).parent / "web"
 
 
-@app.function(image=web_image, timeout=3600)  # 1 hour for large books
+@app.function(image=web_image, timeout=7200)  # 2 hours for large books
 @modal.concurrent(max_inputs=100)
 @modal.asgi_app()
 def web_app():
