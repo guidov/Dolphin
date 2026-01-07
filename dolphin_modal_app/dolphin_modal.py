@@ -794,6 +794,48 @@ def web_app():
                 detail=f"Processing error: {str(e)}"
             )
     
+    @api.post("/api/convert/storybook")
+    async def convert_storybook(file: UploadFile = File(...)):
+        """
+        Convert a storybook PDF to text - optimized for children's books.
+        
+        This endpoint is faster than /api/convert because it:
+        - Only processes TEXT elements (no tables, equations, code)
+        - Optimized for illustrated storybooks
+        
+        Accepts: PDF files only
+        Returns: JSON with extracted text and page details
+        """
+        # Validate file type
+        filename = file.filename.lower() if file.filename else 'document.pdf'
+        ext = '.' + filename.split('.')[-1] if '.' in filename else ''
+        
+        if ext != '.pdf':
+            raise HTTPException(
+                status_code=400,
+                detail="Only PDF files are supported for storybook conversion"
+            )
+        
+        # Read file content
+        content = await file.read()
+        
+        if not content:
+            raise HTTPException(
+                status_code=400,
+                detail="Empty file received"
+            )
+        
+        try:
+            # Process storybook PDF
+            result = dolphin.parse_storybook.remote(content)
+            return JSONResponse(content=result)
+            
+        except Exception as e:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Processing error: {str(e)}"
+            )
+    
     @api.get("/api/health")
     async def health_check():
         """Health check endpoint."""
