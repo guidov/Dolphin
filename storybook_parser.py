@@ -131,7 +131,7 @@ def main():
     
     # Process storybook
     log("📖 Processing storybook (text-only mode)...")
-    log("   (This skips tables, equations, and images for speed)")
+    log("   (This may take up to 2 min per page for complex books)")
     
     start_time = time.time()
     

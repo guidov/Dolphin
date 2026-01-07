@@ -106,7 +106,7 @@ def main():
     
     # Process the file
     log("🐬 Processing with Dolphin AI...")
-    log("   (This may take a while for large documents)")
+    log("   (This may take up to 2 min per page for complex documents)")
     
     start_time = time.time()
     
