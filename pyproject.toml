@@ -1,3 +1,22 @@
+[project]
+name = "dolphin-parser"
+version = "0.1.0"
+description = "High-performance PDF and image parsing using Dolphin Qwen2.5-VL on Modal"
+readme = "README.md"
+authors = [{ name = "Guido", email = "guido@greyai.ca" }]
+requires-python = ">=3.11"
+dependencies = [
+    "modal>=0.63.0",
+    "pymupdf>=1.26.0",
+    "pillow>=10.0.0",
+    "qwen-vl-utils",
+    "huggingface-hub",
+    "fastapi>=0.100.0",
+]
+
+[tool.uv]
+managed = true
+
 [tool.black]
 line-length = 120
 include = '\.pyi?$'

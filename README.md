@@ -168,8 +168,9 @@ python demo_element.py --model_path ./hf_model --save_dir ./results \
     --element_type [table|formula|text|code]
 ````
 
+
 ### 🎨 Layout Parsing
-````bash
+```bash
 # Process a single document image
 python demo_layout.py --model_path ./hf_model --save_dir ./results \
     --input_path ./demo/page_imgs/page_1.png \
@@ -181,7 +182,36 @@ python demo_layout.py --model_path ./hf_model --save_dir ./results \
 # Process all documents in a directory
 python demo_layout.py --model_path ./hf_model --save_dir ./results \
     --input_path ./demo/page_imgs 
-````
+```
+
+## ☁️ Modal Cloud Deployment
+
+We provide a specialized implementation for running Dolphin on **Modal**, enabling highly parallelized and cost-effective parsing.
+
+### 1. Isolated Setup (Avoid "Mega-Envs")
+To keep your local system clean and avoid dependency conflicts (like the "Mega-Env" issue), use `uv` for a project-specific isolated environment.
+
+```bash
+# 1. Run the setup script
+./scripts/setup_uv.sh
+
+# 2. Use the isolated environment
+uv run modal deploy dolphin_modal_app/dolphin_modal.py
+```
+
+### 2. High-Performance CLI Tools
+Once deployed, you can use our optimized CLI tools for processing large documents:
+
+```bash
+# For Storybooks (Text-focused, 2x faster)
+uv run storybook_parser.py "Wizard_of_Oz.pdf" --clean > story.txt
+
+# For Academic PDFs (Full parsing with tables/equations)
+uv run dolphin_cli.py "paper.pdf" -o results.json
+```
+
+---
+
 
 
 ## 🌟 Key Features
