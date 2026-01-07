@@ -703,6 +703,148 @@ class DolphinModel:
 
 
 # ============================================================================
+# Async OCR Processing (for background jobs)
+# ============================================================================
+
+# Image with boto3 for R2 access and supabase client
+async_processing_image = (
+    modal.Image.debian_slim(python_version="3.11")
+    .pip_install(
+        "boto3",
+        "supabase",
+    )
+)
+
+@app.function(
+    image=async_processing_image,
+    timeout=7200,  # 2 hours
+    secrets=[
+        modal.Secret.from_name("r2-credentials"),
+        modal.Secret.from_name("supabase-credentials"),
+    ],
+)
+def process_book_ocr_async(book_id: str, file_key: str, book_title: str):
+    """
+    Async OCR processing that runs independently of HTTP connections.
+    
+    This function is designed to be called with .spawn() for fire-and-forget execution.
+    It handles:
+    1. Fetching PDF from R2
+    2. Calling Dolphin OCR
+    3. Saving result to R2
+    4. Updating Supabase cache status
+    
+    Requires Modal secrets:
+    - r2-credentials: R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME
+    - supabase-credentials: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+    """
+    import boto3
+    from supabase import create_client
+    import time
+    
+    start_time = time.time()
+    
+    # Initialize clients from secrets
+    r2_account_id = os.environ["R2_ACCOUNT_ID"]
+    r2_access_key = os.environ["R2_ACCESS_KEY_ID"]
+    r2_secret_key = os.environ["R2_SECRET_ACCESS_KEY"]
+    r2_bucket = os.environ["R2_BUCKET_NAME"]
+    
+    supabase_url = os.environ["SUPABASE_URL"]
+    supabase_key = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+    
+    s3 = boto3.client(
+        's3',
+        endpoint_url=f'https://{r2_account_id}.r2.cloudflarestorage.com',
+        aws_access_key_id=r2_access_key,
+        aws_secret_access_key=r2_secret_key,
+    )
+    
+    supabase = create_client(supabase_url, supabase_key)
+    
+    try:
+        print(f"[Async] Starting OCR for book {book_id}")
+        
+        # 1. Fetch PDF from R2
+        response = s3.get_object(Bucket=r2_bucket, Key=file_key)
+        pdf_bytes = response['Body'].read()
+        print(f"[Async] PDF fetched: {len(pdf_bytes)} bytes")
+        
+        # 2. Process with Dolphin
+        dolphin = DolphinModel()
+        result = dolphin.parse_storybook.remote(pdf_bytes)
+        
+        if not result.get('success'):
+            raise Exception(result.get('error', 'OCR processing failed'))
+        
+        print(f"[Async] OCR completed: {result['total_pages']} pages")
+        
+        # 3. Add metadata and clean text
+        processing_time = time.time() - start_time
+        enriched_result = {
+            **result,
+            "metadata": {
+                "book_id": book_id,
+                "book_title": book_title,
+                "processed_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "processing_time_ms": int(processing_time * 1000),
+            },
+            "clean_text": clean_ocr_text_simple(result.get('full_text', '')),
+        }
+        
+        # 4. Save to R2
+        json_key = f"ocr-json/{book_id}.json"
+        s3.put_object(
+            Bucket=r2_bucket,
+            Key=json_key,
+            Body=json.dumps(enriched_result),
+            ContentType='application/json',
+        )
+        print(f"[Async] Saved OCR JSON to R2: {json_key}")
+        
+        # 5. Update Supabase
+        supabase.table('book_ocr_cache').update({
+            'status': 'completed',
+            'page_count': result['total_pages'],
+            'processing_time_seconds': processing_time,
+            'error_message': None,
+        }).eq('book_id', book_id).execute()
+        
+        print(f"[Async] OCR completed for book {book_id} in {processing_time:.1f}s")
+        return {"success": True, "pages": result['total_pages']}
+        
+    except Exception as e:
+        print(f"[Async] Error processing book {book_id}: {e}")
+        # Update Supabase with error
+        try:
+            supabase.table('book_ocr_cache').update({
+                'status': 'failed',
+                'error_message': str(e),
+            }).eq('book_id', book_id).execute()
+        except:
+            pass
+        return {"success": False, "error": str(e)}
+
+
+def clean_ocr_text_simple(text: str) -> str:
+    """Simple text cleanup for OCR output."""
+    import re
+    if not text:
+        return ''
+    
+    cleaned = text
+    cleaned = re.sub(r'--- Page \d+ ---\n*', '', cleaned)
+    cleaned = re.sub(r'^\d+\s*$', '', cleaned, flags=re.MULTILINE)
+    cleaned = re.sub(r'(\w)-\n(\w)', r'\1\2', cleaned)
+    cleaned = re.sub(r'(?<!\n)\n(?!\n)', ' ', cleaned)
+    cleaned = re.sub(r'\n{2,}', '\n\n', cleaned)
+    cleaned = re.sub(r' {2,}', ' ', cleaned)
+    
+    paragraphs = [p.strip() for p in cleaned.split('\n\n') if p.strip() and len(p.strip()) > 3]
+    return '\n\n'.join(paragraphs)
+
+
+# ============================================================================
 # Web Application
 # ============================================================================
 
@@ -714,6 +856,7 @@ web_image = (
 
 # Load static files
 static_path = Path(__file__).parent / "web"
+
 
 
 @app.function(image=web_image, timeout=7200)  # 2 hours for large books
@@ -840,6 +983,37 @@ def web_app():
     async def health_check():
         """Health check endpoint."""
         return {"status": "healthy", "model": MODEL_ID}
+    
+    @api.post("/api/start-ocr")
+    async def start_ocr_async(
+        book_id: str,
+        file_key: str,
+        book_title: str = "Untitled"
+    ):
+        """
+        Start async OCR processing that runs independently of this HTTP connection.
+        
+        This immediately returns 202 Accepted and processes in the background.
+        The result will be saved to R2 and Supabase when complete.
+        """
+        try:
+            # Spawn the async processing function (fire-and-forget)
+            # This returns immediately and processing continues in background
+            process_book_ocr_async.spawn(book_id, file_key, book_title)
+            
+            return JSONResponse(
+                status_code=202,
+                content={
+                    "status": "processing",
+                    "message": f"OCR started for book {book_id}. Processing will continue in background.",
+                    "book_id": book_id,
+                }
+            )
+        except Exception as e:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Failed to start OCR: {str(e)}"
+            )
     
     return api
 
