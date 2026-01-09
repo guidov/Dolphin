@@ -94,7 +94,7 @@ def download_model():
     gpu="T4",  # Cheaper option (~$0.15/hr) - 16GB VRAM
     volumes={"/model_cache": model_volume},
     scaledown_window=300,  # Keep warm for 5 minutes
-    timeout=7200,  # 2 hours for very large books (e.g. 200+ pages)
+    timeout=36000,  # 10 hours for very large books
 )
 class DolphinModel:
     """
@@ -717,7 +717,7 @@ async_processing_image = (
 
 @app.function(
     image=async_processing_image,
-    timeout=7200,  # 2 hours
+    timeout=36000,  # 10 hours
     secrets=[
         modal.Secret.from_name("r2-credentials"),
         modal.Secret.from_name("supabase-credentials"),
@@ -859,7 +859,7 @@ static_path = Path(__file__).parent / "web"
 
 
 
-@app.function(image=web_image, timeout=7200)  # 2 hours for large books
+@app.function(image=web_image, timeout=36000)  # 10 hours for large books
 @modal.concurrent(max_inputs=100)
 @modal.asgi_app()
 def web_app():
